@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: aqua;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: burlywood;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 80%;
+            max-width: 600px;
+            margin: 20px;
+        }
+
+        #numbers p,a {
+            text-decoration: none;
+            color: black;
+            font-size:16px;
+            font-weight: bold;
+        }
+
+        .company-address,
+        .contact-form {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .company-address {
+            background-color: burlywood;
+        }
+
+        .contact-form {
+            background-color: #ffffff;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label,
+        input,
+        textarea {
+            margin-bottom: 15px;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        #button{
+            padding: 10px;
+            border-radius: 25px;
+            background-color:lightblue;
+        }
+
+        /* Media Queries */
+        @media only screen and (max-width: 768px) {
+            .contact-container {
+                width: 90%;
+            }
+
+            .company-address,
+            .contact-form {
+                width: 100%;
+                padding: 4px 10px;
+            }
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            .contact-container {
+                width: 70%;
+            }
+        }
+
+        @media only screen and (min-width: 1024px) {
+            .contact-container {
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contact-container">
+        <div class="company-address">
+            <h2>Company Address</h2>
+            <p>Unique Packaging Solution</p>
+            <p><i class="fa-solid fa-location-dot"></i>No.135/8, 1st Main Road,<br> 4th D Cross, Gandhi
+                Nagar,<br> Bangalore - 560 009.</p><br>
+            <p><i class="fa-solid fa-envelope"></i><a href="mailto:Uniquepackagingindialtd@gmail.com">
+                    Uniquepackagingindialtd@gmail.com</a>
+            </p>
+            <p id="numbers"><i class="fa-solid fa-phone"></i>
+                <a href="tel:+919945883157">9945883157</a>
+            <p><a href="tel:+918073519061">8073519061</a></p>
+            <p><a href="tel:+91998668910"> 998668910</a></p>
+            <a href="tel:+918660505698 "> 8660505698</a>
+            </p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="#" method="post" onsubmit="sendWhatsAppMessage(); return false;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button  id="button" onclick="sendWhatsAppMessage()">Send Message</button>
+            </form>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
