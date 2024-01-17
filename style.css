@@ -495,7 +495,7 @@ nav a {
 
 .container-1{
   width: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 10px 20px ;
   /* background-color:lightblue; */
   /* border-radius: 50px; */
@@ -821,6 +821,10 @@ nav a {
   background: #fff;
   top: 0;
 }
+
+
+
+
 /* footer */
 * {
   font-family: Open Sans;

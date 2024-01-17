@@ -6,32 +6,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Contact Us</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            display: flex;
+        header {
+  background-color:lightblue;
+  color:#B27657;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: aqua;
-        }
+.logo {
+  max-width: 150px;
+  width: 50px;
+  height:50px;
+  border-radius: 50px;
+}
 
-        .contact-container {
-            display: flex;
-            flex-wrap: wrap;
-            background-color: burlywood;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            overflow: hidden;
-            width: 80%;
-            max-width: 600px;
-            margin: 20px;
-        }
+/* Navigation styles */
+nav {
+  background-color: #444;
+  overflow: hidden;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Search bar styles */
+.search-bar {
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-right: 50px;
+  /* border-radius: 50px; */
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  /* border-radius: 50px; */
+}
+
+.search-button {
+    height: 100%; /* Set the height to 100% */
+    border-radius: 0; /* Remove border-radius */
+  }
+
+.search-button:hover {
+  background-color: #666;
+}
+
+/* Dropdown styles */
+.dropdown {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+  color: #fff;
+}
+
+
+/* Media query for responsive design */
+/*========= media query for header and navbar ===========*/
+@media screen and (max-width: 800px) {
+  nav {
+    display: none;
+    flex-direction: column;
+  }
+
+  nav a {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .search-bar {
+    max-width: 100%;
+  }
+}
+
+/* contact form */
+         .contact-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto; /* Center horizontally */
+  }
+
+  .contact-container1 .company-address,
+  .contact-container1 .contact-form {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .contact-container1 .company-address {
+    background-color: burlywood;
+  }
+
+  .contact-container1 .contact-form {
+    background-color: #ffffff;
+  }
 
         #numbers p,a {
             text-decoration: none;
@@ -92,9 +226,21 @@
             background-color:lightblue;
         }
 
-        /* Media Queries */
+        /* Media Queries contact container */
+        
+        @media only screen and (max-width: 800px) {
+            .contact-container1 {
+                flex-direction: column;
+            }
+
+            .contact-container1 .company-address,
+            .contact-container1 .contact-form {
+                width: 100%;
+            }
+        }
+
         @media only screen and (max-width: 768px) {
-            .contact-container {
+            .contact-container1 {
                 width: 90%;
             }
 
@@ -106,13 +252,13 @@
         }
 
         @media only screen and (min-width: 768px) and (max-width: 1024px) {
-            .contact-container {
+            .contact-container1 {
                 width: 70%;
             }
         }
 
         @media only screen and (min-width: 1024px) {
-            .contact-container {
+            .contact-container1 {
                 width: 60%;
             }
         }
@@ -120,41 +266,75 @@
 </head>
 
 <body>
-    <div class="contact-container">
+    <header>
+        <img src="IMAGES/logo.jpg" alt="Logo" class="logo">
+        <div class="search-bar">
+          <input type="text" class="search-input" placeholder="Search...">
+          <button class="search-button">Search</button>
+        </div>
+        <div class="mobile-menu" onclick="toggleMobileMenu()">☰</div>
+      </header>
+    
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html">Our Products</a>
+    
+        <div class="dropdown">
+          <button class="dropbtn">All raw materials
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="product.html">Aluminium Containers</a>
+            <a href="product-3.html">Sugarcane Bagasse Products</a>
+            <a href="product-4.html">Disposable products</a>
+            <a href="product-2.html">Takeaways</a>
+            <a href="product-3.html">Skewers</a>
+            <a href="product-4.html">Icecream Cups</a>
+            <a href="product-4.html">paperbags</a>
+          </div>
+        </div>
+        <a href="contact.html">Contact us</a>
+    
+    
+      </nav> 
+    <div class="contact-container1">
         <div class="company-address">
             <h2>Company Address</h2>
             <p>Unique Packaging Solution</p>
-            <p><i class="fa-solid fa-location-dot"></i>No.135/8, 1st Main Road,<br> 4th D Cross, Gandhi
-                Nagar,<br> Bangalore - 560 009.</p><br>
+            <p>
+                <i class="fa-solid fa-location-dot"></i>No.135/8, 1st Main Road,<br> 4th D Cross, Gandhi
+                Nagar,<br> Bangalore - 560 009.
+            </p><br>
             <p><i class="fa-solid fa-envelope"></i><a href="mailto:Uniquepackagingindialtd@gmail.com">
                     Uniquepackagingindialtd@gmail.com</a>
             </p>
-            <p id="numbers"><i class="fa-solid fa-phone"></i>
-                <a href="tel:+919945883157">9945883157</a>
-            <p><a href="tel:+918073519061">8073519061</a></p>
-            <p><a href="tel:+91998668910"> 998668910</a></p>
-            <a href="tel:+918660505698 "> 8660505698</a>
+            <p id="numbers">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+919945883157">9945883157</a><br>
+                <a href="tel:+918073519061">8073519061</a><br>
+                <a href="tel:+91998668910">998668910</a><br>
+                <a href="tel:+918660505698">8660505698</a>
             </p>
         </div>
-
+    
         <div class="contact-form">
             <h2>Contact Us</h2>
-            <form action="#" method="post" onsubmit="sendWhatsAppMessage(); return false;">
+            <form id="contactForm" action="#" method="post" onsubmit="validateFormAndSend(); return false;">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-
+    
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-
+    
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button  id="button" onclick="sendWhatsAppMessage()">Send Message</button>
+    
+                <button id="button">Send Message</button>
             </form>
         </div>
-
-        <script src="script.js"></script>
     </div>
+<script src="script.js"></script>
 </body>
 
 </html>

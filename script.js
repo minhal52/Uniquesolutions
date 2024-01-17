@@ -12,7 +12,19 @@ function toggleMobileMenu() {
     alert('Searching for: ' + searchQuery);
 }
   // contact form script
-  function sendWhatsAppMessage() {
+  function validateFormAndSend() {
+    var form = document.getElementById("contactForm");
+
+    if (form.checkValidity()) {
+        // If the form is valid, proceed to send the message
+        sendWhatsAppMessage();
+    } else {
+        // If the form is not valid, display a validation message
+        alert("Please fill in all required fields.");
+    }
+}
+
+function sendWhatsAppMessage() {
     var name = encodeURIComponent(document.getElementById('name').value);
     var email = encodeURIComponent(document.getElementById('email').value);
     var message = encodeURIComponent(document.getElementById('message').value);
