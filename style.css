@@ -618,16 +618,18 @@ nav a {
  
 } 
 
+/* Mobile screens - 2 products in one row */
 @media (max-width: 480px) {
   .product-container {
+    width: calc(50% - 20px);
     margin: 10px;
-    width: calc(100% - 20px);
   }
 
   #product-list {
-    margin-top: 60px; 
+    margin-top: 60px;
   }
 }
+
 
 /* Responsive Styles for Laptops and Medium Screens */
 @media screen and (max-width: 1024px) {
