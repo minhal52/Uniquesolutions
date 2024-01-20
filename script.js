@@ -5,12 +5,7 @@ function toggleMobileMenu() {
   }
 
 
-  // search bar 
-  function performSearch() {
-    // Get the value from the input field
-    var searchQuery = document.querySelector('.search-input').value;
-    alert('Searching for: ' + searchQuery);
-}
+ 
   // contact form script
   function validateFormAndSend() {
     var form = document.getElementById("contactForm");
@@ -35,3 +30,5 @@ function sendWhatsAppMessage() {
 
     window.open(whatsappLink, '_blank');
 }
+
+
