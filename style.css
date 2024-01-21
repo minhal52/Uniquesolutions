@@ -1096,3 +1096,14 @@ nav a {
   }
 
 }
+
+/* this for search functionality */
+.product-container[style*="none"] {
+  display: none !important;
+  opacity: 0.5; 
+}
+
+.best-seller .best-p1[style*="none"] {
+  display: none !important;
+  opacity: 0.5; 
+}

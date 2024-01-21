@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +14,12 @@
 
   <header>
     <img src="IMAGES/logo.jpg" alt="Logo" class="logo">
+
     <div class="search-bar">
-      <input type="text" class="search-input" placeholder="Search...">
+      <input type="text" class="search-input" id="searchInput" placeholder="Search..." oninput="indexSearch()">
       <button class="search-button">Search</button>
     </div>
+
     <div class="mobile-menu" onclick="toggleMobileMenu()">☰</div>
   </header>
 
@@ -108,7 +111,7 @@
             meets
             high-quality standards but also aligns
             seamlessly with your eco-conscious values..</p>
-           <a href="about.html" class="read-more">Read More...</a>
+          <a href="about.html" class="read-more">Read More...</a>
         </div>
       </section>
     </div>
@@ -183,13 +186,13 @@
         <p> No.135/8, 1st Main Road,<br> 4th D Cross, Gandhi
           Nagar,<br> Bangalore - 560 009.</p><br>
       </div><br>
-<p >Call Us:</p>
+      <p>Call Us:</p>
       <div>
         <i class="fa fa-phone"></i>
         <!-- <ion-icon name="call-outline" aria-hidden="true"></ion-icon> -->
         <p> <a href="tel:919945883157" class="contact-link">+91 9945883157</a> <br>
           <a href="tel:918073519061" class="contact-link">+91 8073519061</a><br>
-           <a href="tel:91998668910" class="contact-link">+91 998668910</a><br>
+          <a href="tel:91998668910" class="contact-link">+91 998668910</a><br>
           <a href="tel:918660505698" class="contact-link">+91 8660505698</a>
         </p>
 
@@ -226,7 +229,7 @@
 
 
   </footer>
-  
+
   <script>
     function toggleMobileMenu() {
       var nav = document.querySelector('nav');
@@ -234,6 +237,7 @@
     }
 
   </script>
+  <script src="script.js"></script>
 
 </body>
 
