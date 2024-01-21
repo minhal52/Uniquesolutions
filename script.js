@@ -32,3 +32,44 @@ function sendWhatsAppMessage() {
 }
 
 
+// ===========Search bar script ========/
+let availableKeywords = [
+    'Aluminium foils rolls',
+    'plastic container',
+    'icecrem sticks',
+    'skewers',
+    'bagasse plates',
+    'spoon',
+    'knives'
+];
+
+const resultBox = document.querySelector(".result-box");
+const inputBox = document.getElementById("input-box");
+inputBox.onkeyup = function(){
+    let result = [];
+    let input = inputBox.value;
+    if(input.length){
+        result = availableKeywords.filter((keyword)=>{
+          return keyword.toLowerCase().includes(input.toLowerCase());
+        });
+        // console.log(result);
+// calling the display function
+display(result);
+if(!result.length){
+    resultBox.innerHTML = '';
+}
+    }
+
+}
+function display(result) {
+    const content = result.map((list) => {
+        return <a href="${list}.html"><li onclick="selectInput(this)">${list}</li></a>;
+    });
+    resultBox.innerHTML = "<ul>" + content.join('') + " </ul>";
+}
+
+function selectInput(list){
+    inputBox.value = list.innerHTML;
+    resultBox.innerHTML = '';
+
+}

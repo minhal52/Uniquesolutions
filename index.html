@@ -6,6 +6,7 @@
   <title>Home</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofGJYqcSlzK6UZBQHjJSKkD5I02P1i1uJT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/393ff6bdca.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,10 +14,16 @@
 
   <header>
     <img src="IMAGES/logo.jpg" alt="Logo" class="logo">
-    <div class="search-bar">
-      <input type="text" class="search-input" placeholder="Search...">
-      <button class="search-button">Search</button>
-    </div>
+    <div class="search-box">
+      <div class="row">
+          <input type="text" id="input-box" placeholder="Search anything" autocomplete="off">
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <div class="result-box">
+          <!-- <ul><li>aluminum foils</li>
+          <li>plastic containers</li></ul> -->
+      </div>
+     </div> 
     <div class="mobile-menu" onclick="toggleMobileMenu()">☰</div>
   </header>
 
@@ -227,13 +234,7 @@
 
   </footer>
   
-  <script>
-    function toggleMobileMenu() {
-      var nav = document.querySelector('nav');
-      nav.style.display = nav.style.display === 'none' ? 'flex' : 'none';
-    }
-
-  </script>
+  <script src="script.js"></script>
 
 </body>
 
