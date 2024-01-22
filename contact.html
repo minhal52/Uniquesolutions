@@ -4,59 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- ICONS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Contact Us</title>
     <style>
         header {
-  background-color:lightblue;
-  color:#B27657;
-  padding: 10px;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+            background-color: lightblue;
+            color: #B27657;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.logo {
-  max-width: 150px;
-  width: 50px;
-  height:50px;
-  border-radius: 50px;
-}
-/* contact form */
-         .contact-container1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: burlywood;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
-    width: 80%;
-    max-width: 800px;
-    margin: 20px auto; /* Center horizontally */
-  }
+        .logo {
+            max-width: 150px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+        }
 
-  .contact-container1 .company-address,
-  .contact-container1 .contact-form {
-    flex: 1;
-    padding: 20px;
-  }
+        /* contact form */
+        .contact-container1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: burlywood;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            /* Center horizontally */
+        }
 
-  .contact-container1 .company-address {
-    background-color: burlywood;
-  }
+        .contact-container1 .company-address,
+        .contact-container1 .contact-form {
+            flex: 1;
+            padding: 20px;
+        }
 
-  .contact-container1 .contact-form {
-    background-color: #ffffff;
-  }
+        .contact-container1 .company-address {
+            background-color: burlywood;
+        }
 
-        #numbers p,a {
+        .contact-container1 .contact-form {
+            background-color: #ffffff;
+        }
+
+        #numbers p,
+        a {
             text-decoration: none;
             color: black;
-            font-size:16px;
+            font-size: 16px;
             font-weight: bold;
         }
 
@@ -68,6 +73,21 @@
 
         .company-address {
             background-color: burlywood;
+            display: flex;
+            flex-direction: column;
+            display: inline-block;
+
+        }
+
+        .company-address i.fa-solid {
+
+            margin-bottom: 5px;
+
+        }
+
+        .company-address p {
+            margin-bottom: 8px;
+
         }
 
         .contact-form {
@@ -106,14 +126,15 @@
         input[type="submit"]:hover {
             background-color: #45a049;
         }
-        #button{
+
+        #button {
             padding: 10px;
             border-radius: 25px;
-            background-color:lightblue;
+            background-color: lightblue;
         }
 
         /* Media Queries contact container */
-        
+
         @media only screen and (max-width: 1024px) {
             .contact-container1 {
                 flex-direction: column;
@@ -154,45 +175,45 @@
 <body>
     <header>
         <a href="/"><img src="IMAGES/logo.jpg" alt="Logo" class="logo"></a>
-        <div class="search-box ">
+        <!-- <div class="search-box ">
           <div class="row">
             <input type="text" id="input-box" placeholder="Search anything..."  autocomplete="off">
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
           </div>
           <div class="result-box"></div>
-        </div>
+        </div> -->
         <div class="mobile-menu" onclick="toggleMobileMenu()">☰</div>
-      </header>
-    
-      <nav>
+    </header>
+
+    <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="product.html">Our Products</a>
-    
+
         <div class="dropdown">
-          <button class="dropbtn">All Raw Materials
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="product.html">Aluminium Containers</a>
-            <a href="product-3.html">Sugarcane Bagasse Products</a>
-            <a href="product-4.html">Disposable products</a>
-            <a href="product-2.html">Takeaways</a>
-            <a href="product-3.html">Skewers</a>
-            <a href="product-4.html">Icecream Cups</a>
-            <a href="product-4.html">paperbags</a>
-          </div>
+            <button class="dropbtn">All Raw Materials
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="product.html">Aluminium Containers</a>
+                <a href="product-3.html">Sugarcane Bagasse Products</a>
+                <a href="product-4.html">Disposable products</a>
+                <a href="product-2.html">Takeaways</a>
+                <a href="product-3.html">Skewers</a>
+                <a href="product-4.html">Icecream Cups</a>
+                <a href="product-4.html">paperbags</a>
+            </div>
         </div>
         <a href="contact.html">Contact us</a>
-    
-    
-      </nav> 
+
+
+    </nav>
     <div class="contact-container1">
         <div class="company-address">
             <h2>Company Address</h2>
             <p>Unique Packaging Solution</p>
             <p>
-                <i class="fa-solid fa-location-dot"></i>No.135/8, 1st Main Road,<br> 4th D Cross, Gandhi
+                <i class="fa-solid fa-location-dot"></i> No.135/8, 1st Main Road,<br> 4th D Cross, Gandhi
                 Nagar,<br> Bangalore - 560 009.
             </p><br>
             <p><i class="fa-solid fa-envelope"></i><a href="mailto:Uniquepackagingindialtd@gmail.com">
@@ -206,25 +227,25 @@
                 <a href="tel:+918660505698">8660505698</a>
             </p>
         </div>
-    
+
         <div class="contact-form">
             <h2>Contact Us</h2>
             <form id="contactForm" action="#" method="post" onsubmit="validateFormAndSend(); return false;">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-    
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-    
+
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
-    
+
                 <button id="button">Send Message</button>
             </form>
         </div>
     </div>
-    
-<script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1068,7 +1068,7 @@ nav {
 }
 
 .footer-distributed .footer-center i {
-  background-color:black;
+  
   color: grey;
   font-size: 25px;
   width: 38px;
@@ -1181,6 +1181,7 @@ nav {
 
   .footer-distributed .footer-center i {
     margin-left: 0;
+
   }
 
 }
