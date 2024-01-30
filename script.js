@@ -39,11 +39,11 @@ function sendWhatsAppMessage() {
 // ===========Search bar script ========/
 const availableKeywords = {
   "Aluminium Containers": {
-    keywords: ["Aluminium Containers"],
+    keywords: ["Aluminium Containers","Foils","Precut sheets","Takeaways","Airway containers"],
     fileName: "product.html",
   },
   "Sugarcane Bagasse Products": {
-    keywords: ["Sugarcane", "Bagasse", "Plates", "Bowls"],
+    keywords: ["Sugarcane Bagasse Products", "Plates", "Bowls","Cups"],
     fileName: "product-3.html",
   },
   "Disposable products": {
@@ -55,17 +55,25 @@ const availableKeywords = {
     fileName: "product-2.html",
   },
   Skewers: {
-    keywords: ["Skewers"],
+    keywords: ["Skewers","Coffee Stirrer","Fruit Skewers","Teppo Skewers","Knotted Skewers"],
     fileName: "product-3.html",
   },
   "Icecream Cups": {
-    keywords: ["Ice Cream", "Cups"],
+    keywords: ["Ice Cream Cups", "Ice Cream Spoons"],
     fileName: "product-4.html",
   },
   "Paper Bags": {
-    keywords: ["Paper Bags", "Carry Bags"],
+    keywords: ["Paper Bags", "Carry Bags","Tamper Evident Bags","Bakery Paper Bags","Restaurant Paper Bags","Sweet Paper Bags"],
     fileName: "product-4.html",
   },
+  "Cutlery's":{
+  keywords: ["Spoons", "Knives", "Forks","Toothpicks", "Cutlery"],
+  fileName: "product-3.html",
+  },
+  "Disposables":{
+    keywords: ["Car Premier Tissue", "Masks", "Bouffmant Cap","Toilet Paper Rolls", "Kitchen Paper Rolls","Bubble Wrap"],
+    fileName: "product-5.html",
+    }, 
 };
 
 const resultBox = document.querySelector(".result-box");
@@ -106,3 +114,42 @@ function selectInput(list) {
   inputBox.value = list.innerHTML;
   resultBox.innerHTML = "";
 }
+
+
+
+// home sliding bar script
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("slide");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    setTimeout(showSlides, 2000); // Change slide every 2 seconds
+}
+
+
+
+// carousel
+$(document).ready(function() {
+  $('#autoWidth').lightSlider({
+      autoWidth:true,
+      loop:true,
+      onSliderLoad: function() {
+          $('#autoWidth').removeClass('cS-hidden');
+      } 
+  });  
+});
+
+
+

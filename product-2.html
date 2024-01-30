@@ -25,7 +25,7 @@
     </div>
     <div class="mobile-menu" onclick="toggleMobileMenu()">☰</div>
   </header>
-
+  
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -49,6 +49,9 @@
 
 
   </nav>
+  <div class="result-text">
+    <p>Showing results 18-33 out of 82</p>
+  </div>
   <div id="product-list">
     <!-- Product 1 -->
     <div class="product-container">
@@ -214,28 +217,28 @@
       </div>
     </div>
     <div class="product-container">
-      <img class="product-image" src="IMAGES/Neww/Neww/sipper glass plastic.jpg" alt="Product 4">
+      <img class="product-image" src="IMAGES/Neww/Neww/bowlsround.jpeg" alt="Product 4">
       <div class="product-details">
-        <h3>Sipper glass</h3>
-        <h5>Plastic</h5>
-        <p>Kitchen Storage & Containers</p>
+        <h3>Bowl container</h3>
+        <p>Plastic Containers</p>
         <button class="buy-button"><a href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product"
             target="_blank">Buy Now</a></button>
 
       </div>
     </div>
-    <div class="product-container">
-      <img class="product-image" src="IMAGES/Neww/sweetbox.jpg" alt="Product 4">
-      <div class="product-details">
-        <h3>Sweet box</h3>
-        <h5>Plastic</h5>
-        <p>Kitchen Storage & Containers</p>
-        <button class="buy-button"><a href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product"
-            target="_blank">Buy Now</a></button>
+  
+  <div class="product-container">
+    <img class="product-image" src="IMAGES/Neww/sweetbox.jpg" alt="Product 4">
+    <div class="product-details">
+      <h3>Sweet box</h3>
+      <h5>Plastic</h5>
+      <p>Kitchen Storage & Containers</p>
+      <button class="buy-button"><a href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product"
+          target="_blank">Buy Now</a></button>
 
-      </div>
     </div>
-
+  </div>
+</div>
   </div>
   <div class="pagination">
     <a href="product.html">&laquo;</a>
@@ -320,6 +323,43 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?38071';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+    "enabled":true,
+    "chatButtonSetting":{
+        "backgroundColor":"#add8e6",
+        "ctaText":"Chat with us",
+        "borderRadius":"25",
+        "marginLeft": "0",
+        "marginRight": "20",
+        "marginBottom": "20",
+        "ctaIconWATI":false,
+        "position":"right"
+    },
+    "brandSetting":{
+        "brandName":"Wati",
+        "brandSubTitle":"undefined",
+        "brandImg":"https://www.wati.io/wp-content/uploads/2023/04/Wati-logo.svg",
+        "welcomeText":"",
+        "messageText":"Hello, %0A I have a query about the product.",
+        "backgroundColor":"#add8e6",
+        "ctaText":"Chat with us",
+        "borderRadius":"25",
+        "autoShow":false,
+        "phoneNumber":"919945883157"
+    }
+    };
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
 </body>
 
 </html>

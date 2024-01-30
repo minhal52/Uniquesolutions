@@ -48,6 +48,9 @@
 
 
   </nav>
+  <div class="result-text">
+    <p>Showing results 34-50 out of 82</p>
+  </div>
   <div id="product-list">
     <!-- Product 1 -->
     <div class="product-container">
@@ -299,6 +302,43 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?38071';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+    "enabled":true,
+    "chatButtonSetting":{
+        "backgroundColor":"#add8e6",
+        "ctaText":"Chat with us",
+        "borderRadius":"25",
+        "marginLeft": "0",
+        "marginRight": "20",
+        "marginBottom": "20",
+        "ctaIconWATI":false,
+        "position":"right"
+    },
+    "brandSetting":{
+        "brandName":"Wati",
+        "brandSubTitle":"undefined",
+        "brandImg":"https://www.wati.io/wp-content/uploads/2023/04/Wati-logo.svg",
+        "welcomeText":"",
+        "messageText":"Hello, %0A I have a query about the product.",
+        "backgroundColor":"#add8e6",
+        "ctaText":"Chat with us",
+        "borderRadius":"25",
+        "autoShow":false,
+        "phoneNumber":"919945883157"
+    }
+    };
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
 </body>
 
 </html>

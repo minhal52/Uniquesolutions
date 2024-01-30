@@ -50,6 +50,9 @@
 
 
   </nav>
+  <div class="result-text">
+    <p>Showing results 73-82 out of 82</p>
+  </div>
   <div id="product-list">
     <!-- Product 1 -->
     <div class="product-container">
@@ -118,46 +121,50 @@
 
       </div>
     </div>
+    
+    
     <div class="product-container">
-      <img class="product-image" src="IMAGES/Neww/paperroll.jpg" alt="Product 4">
+      <img class="product-image" src="IMAGES/Neww/bopptape.jpg" alt="Product 4">
       <div class="product-details">
-        <h3>Paper rolls</h3>
-        <p>Paper Material</p>
+        <h3>Bopp tapes</h3>
+        <p>Packaging Material</p>
         <button class="buy-button"><a href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product"
             target="_blank">Buy Now</a></button>
 
       </div>
     </div>
     <div class="product-container">
-      <img class="product-image" src="IMAGES/Neww/primiertissue.jpg" alt="Product 4">
+      <img class="product-image" src="IMAGES/Neww/tapes.jpg" alt="Product 4">
       <div class="product-details">
-        <h3>Premier Car tissue</h3>
-        <p>paper </p>
+        <h3>Tapes</h3>
+        <p>Packaging Material</p>
         <button class="buy-button"><a href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product"
             target="_blank">Buy Now</a></button>
 
       </div>
     </div>
     <div class="product-container">
-      <img class="product-image" src="IMAGES/Neww/Neww/bowlsround.jpeg" alt="Product 4">
+      <img class="product-image" src="IMAGES/glassbotlle.jpg" alt="Product 4">
       <div class="product-details">
-        <h3>Bowl container</h3>
-        <p>Plastic Containers</p>
+        <h3>Glass Bottles</h3>
+        <p>Glass</p>
         <button class="buy-button"><a href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product"
             target="_blank">Buy Now</a></button>
 
       </div>
     </div>
     <div class="product-container">
-      <img class="product-image" src="IMAGES/Neww/precutsheet.jpeg" alt="Product 4">
+      <img class="product-image" src="IMAGES/Neww/glsjar.jpg" alt="Product 4">
       <div class="product-details">
-        <h3>Pre cut sheets</h3>
-        <p>Aluminium</p>
+        <h3>Glass Jars</h3>
+        <p>Glass</p>
         <button class="buy-button"><a href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product"
             target="_blank">Buy Now</a></button>
 
       </div>
     </div>
+
+    
   </div>
   <div class="pagination">
     <a href="product-4.html">&laquo;</a>
@@ -244,6 +251,43 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?38071';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+    "enabled":true,
+    "chatButtonSetting":{
+        "backgroundColor":"#add8e6",
+        "ctaText":"Chat with us",
+        "borderRadius":"25",
+        "marginLeft": "0",
+        "marginRight": "20",
+        "marginBottom": "20",
+        "ctaIconWATI":false,
+        "position":"right"
+    },
+    "brandSetting":{
+        "brandName":"Wati",
+        "brandSubTitle":"undefined",
+        "brandImg":"https://www.wati.io/wp-content/uploads/2023/04/Wati-logo.svg",
+        "welcomeText":"",
+        "messageText":"Hello, %0A I have a query about the product.",
+        "backgroundColor":"#add8e6",
+        "ctaText":"Chat with us",
+        "borderRadius":"25",
+        "autoShow":false,
+        "phoneNumber":"919945883157"
+    }
+    };
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
 </body>
 
 </html>
