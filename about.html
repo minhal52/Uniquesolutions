@@ -14,7 +14,7 @@
 
 <body>
   <header>
-    <a href="/"><img src="IMAGES/logo.jpg" alt="Logo" class="logo"></a>
+    <a href="/"><img src="IMAGES/logo-nobg.png" alt="Logo" class="logo"></a>
     <div class="search-box ">
       <div class="row">
         <input type="text" id="input-box" placeholder="Search anything..." autocomplete="off">
@@ -25,14 +25,12 @@
     <div class="mobile-menu" onclick="toggleMobileMenu()">☰</div>
   </header>
 
-  <nav>
+  <nav class="border">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
-    <a href="product.html">Our Products</a>
-
     <div class="dropdown">
-      <button class="dropbtn">All Raw Materials
-        <i class="fa fa-caret-down"></i>
+      <button class="dropbtn" class="border">All Products
+        <!-- <i class="fa fa-caret-down"></i> -->
       </button>
       <div class="dropdown-content">
         <a href="product.html">Aluminium Containers</a>
@@ -41,10 +39,26 @@
         <a href="product-2.html">Takeaways</a>
         <a href="product-3.html">Skewers</a>
         <a href="product-4.html">Icecream Cups</a>
-        <a href="product-4.html">paperbags</a>
+        <a href="product-4.html">Paperbags</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">All Raw Materials
+        <!-- <i class="fa fa-caret-down"></i> -->
+      </button>
+      <div class="dropdown-content">
+        <a href="product.html">Aluminium Containers</a>
+        <a href="product-3.html">Sugarcane Bagasse Products</a>
+        <a href="product-4.html">Disposable products</a>
+        <a href="product-2.html">Takeaways</a>
+        <a href="product-3.html">Skewers</a>
+        <a href="product-4.html">Icecream Cups</a>
+        <a href="product-4.html">Paperbags</a>
       </div>
     </div>
     <a href="contact.html">Contact us</a>
+
+
   </nav>
   <div class="heading">
     <h1>About us</h1>

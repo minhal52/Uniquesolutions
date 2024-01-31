@@ -15,8 +15,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap"
     rel="stylesheet">
 
-    <!-- carosel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css"
+  <!-- carosel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css"
     integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
@@ -25,7 +25,7 @@
 <body>
 
   <header>
-    <a href="#"><img src="IMAGES/logo.jpg" alt="Logo" class="logo"></a>
+    <a href="#"><img src="IMAGES/logo-nobg.png" alt="Logo" class="logo"></a>
     <div class="search-box">
       <div class="row">
         <input type="text" id="input-box" placeholder="Search anything..." autocomplete="off">
@@ -36,14 +36,26 @@
     <div class="mobile-menu" onclick="toggleMobileMenu()">☰</div>
   </header>
 
-  <nav>
+  <nav class="border">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
-    <a href="product.html">Our Products</a>
-
+    <div class="dropdown">
+      <button class="dropbtn" class="border">All Products
+        <!-- <i class="fa fa-caret-down"></i> -->
+      </button>
+      <div class="dropdown-content">
+        <a href="product.html">Aluminium Containers</a>
+        <a href="product-3.html">Sugarcane Bagasse Products</a>
+        <a href="product-4.html">Disposable products</a>
+        <a href="product-2.html">Takeaways</a>
+        <a href="product-3.html">Skewers</a>
+        <a href="product-4.html">Icecream Cups</a>
+        <a href="product-4.html">Paperbags</a>
+      </div>
+    </div>
     <div class="dropdown">
       <button class="dropbtn">All Raw Materials
-        <i class="fa fa-caret-down"></i>
+        <!-- <i class="fa fa-caret-down"></i> -->
       </button>
       <div class="dropdown-content">
         <a href="product.html">Aluminium Containers</a>
@@ -63,238 +75,196 @@
   <!--  -->
 
   <main>
-    <!-- home -->
+    <!-- home  banner /sliding images-->
     <section class="section home has-bg-image" id="home">
       <div class="container">
-          <!-- Image Slider -->
-          <div class="slide-container">
-              <div class="flex">
-                  <!-- image slider content goes here -->
-                  <div class="slide fade">
-                      <img style="height:400px; width: 400px;" src='IMAGES/hmeb22.jpg' alt=''>
-                  </div>
-                  <div class="slide fade">
-                      <img style="height:400px; width: 400px;" src='IMAGES/sweetbags.jpg' alt=''>
-                  </div>
-                  <div class="slide fade">
-                      <img style="height:400px; width: 400px;" src='IMAGES/Neww/Neww/wooden-icecreamspoon.jpg' alt=''>
-                  </div>
-                  <div class="slide fade">
-                      <img style="height:400px; width: 400px;" src='IMAGES/Neww/aluminiumcontainer .jpg' alt=''>
-                  </div>
-                  <a href="#" class="prev" title="Previous">&#10094;</a>
-                  <a href="#" class="next" title="Next">&#10095;</a>
-              </div>
-              <div>
-                  <div class="dots-container">
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                  </div>
-              </div>
+        <!-- Image Slider -->
+        <div class="slide-container">
+          <div class="flex">
+            <!-- image slider content goes here -->
+            <div class="slide fade">
+              <img  src='IMAGES/sliderimg6.jpg' alt=''>
+            </div>
+            <div class="slide fade">
+              <img src='IMAGES/sliderimg2.jpg' alt=''>
+            </div>
+            <div class="slide fade">
+              <img src='IMAGES/sliderimg5.jpg' alt=''>
+            </div>
+            <div class="slide fade">
+              <img src='IMAGES/sliderimg1.jpg' alt=''>
+            </div>
+            <div class="slide fade">
+              <img src='IMAGES/sliderimg3.jpg' alt=''>
+            </div>
+            <div class="slide fade">
+              <img  src='IMAGES/sliderimg4.jpg' alt=''>
+            </div>
+            <a href="#" class="prev" title="Previous" onclick="plusSlides(-1)">&#10094;</a>
+            <a href="#" class="next" title="Next" onclick="plusSlides(1)">&#10095;</a>
           </div>
-
-
-          <!-- Text Content -->
-          <div class="text-content">
-              <h3>
-                  <span class="span">Best Quality</span> Food Packaging Material
-              </h3>
-              <p class="home-text" style="color: black;">"Wrap your goodness in green: <br> Join the Organic Food
-                  Packaging <br> Revolution for a planet-friendly feast!"</p>
-              <a href="product.html" class="btn">Shop Now</a>
+          <div>
+            <div class="dots-container">
+              <span class="dot" onclick="currentSlide(0)"></span>
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
           </div>
-      </div>
-</section>
-
-  <br>
-  <!-- collections -->
-    <section id="collection">
-      <div class="collections container1">
-        <div class="content">
-          <img src="IMAGES/Neww/plastic container round.jpg" alt="img" />
-          <div class="img-content">
-            <p>Plastic Containers</p>
-            <button><a href="product.html">SHOP NOW</a></button>
           </div>
         </div>
-        <div class="content2">
-          <img src="IMAGES/Neww/homepage.jpg" alt="img" />
-          <div class="img-content2">
-            <p>Sugarcane Bagasse Products</p>
-            <button><a href="product-3.html">SHOP NOW</a></button>
-          </div>
-        </div>
-        <div class="content3">
-          <img src="IMAGES/Neww/wooden-icecreamspoon.jpg" alt="img" />
-          <div class="img-content3">
-            <p>Ice Cream Spoons</p>
-            <button><a href="product-3.html">SHOP NOW</a></button>
-          </div>
+
+
+        <!-- Text Content -->
+        <div class="text-content">
+          <h4>
+            Best Quality Food Packaging Material
+          </h4>
+          <h1 class="home-text" style="color: black; width: auto; font-weight: bolder;"> <span>Wrap your goodness</span> in green!</h1>
+            <p>Join the Organic Food
+              Packaging <br> Revolution for a planet-friendly feast.</p>
+          <a href="product.html" class="btn">Shop Now</a>
         </div>
       </div>
-      <br>
-      <!-- carousel -->
-      <section class="product-slider">
-        <div class="slider-heading">
-            <h3> Best Selling Products:</h3>
-            
-        </div> <br>
-
-
-        <ul id="autoWidth" class="cs-hidden">
-            <!-- 1 -->
-            <li class="item-a">
-                <!-- product box -->
-                <div class="product-box">
-                 
-                        <!-- product name -->
-                       
-                        <!-- img -->
-                        <img src="IMAGES/Neww/alu-rect-container.jpg" alt="1234">
-                        <div class="buy-price">
-                            <p>Take Aways Aluminium</p>
-                         
-                  </div>
-                     <!-- btn -->
-                        <a href="prodetail1.html" class="buy-btn">View Details</a>
-                </div>
- </li>
- <!-- 2 -->
- <li class="item-a">
-    <!-- product box -->
-    <div class="product-box">
-      
-            <!-- product name -->
-            <!-- img -->
-            <img src="IMAGES/Neww/sugarcane bagasse plates.jpg" alt="1234">
-
-            <div class="buy-price">
-                <p>Sugarcane Bagasse Plates</p>
-               
-            </div>
-        <!-- btn -->
-        <a href="prodetail2.html" class="buy-btn">View Details</a>
-    </div>
-</li>
-
-
- <!-- 3-->
- <li class="item-a">
-    <!-- product box -->
-    <div class="product-box">
-       
-            <!-- product name -->
-           
-            <!-- img -->
-            <img src="IMAGES/paperbagsrestaurnt.jpg" alt="1234">
-
-            <div class="buy-price">
-                <p>Restaurant Paper Bags</p>
-                
-            </div>
-      <!-- btn -->
-      <a href="prodetail4.html" class="buy-btn">View Details</a>
-    </div>
-</li>
-
-
-
- <!-- 4 -->
- <li class="item-a">
-    <!-- product box -->
-    <div class="product-box">
-            <!-- product name -->
-            <!-- img -->
-            <img src="IMAGES/Neww/mealtray11.jpg" alt="1234">
-
-            <div class="buy-price">
-                <p>Meal Tray</p>
-               
-            </div>
-         <!-- btn -->
-         <a href="prodetail5.html" class="buy-btn">View Details</a>
-    </div>
-</li>
-
-
-
- <!-- 5 -->
- <li class="item-a">
-    <!-- product box -->
-    <div class="product-box">
-    
-            <!-- product name -->
-            <!-- img -->
-            <img src="IMAGES/Neww/paperstraws.jpg" alt="1234">
-
-            <div class="buy-price">
-                <p>PaperStraws</p>
-               
-            </div>
-     <!-- btn -->
-     <a href="prodetail3.html" class="buy-btn">View Details</a>
-    </div>
-</li>
-
-
- <!-- 6-->
- <li class="item-a">
-    <!-- product box -->
-    <div class="product-box">
-    
-            <!-- product name -->
-            <!-- img -->
-            <img src="IMAGES/Neww/primiertissue.jpg" alt="1234">
-
-            <div class="buy-price">
-                <p>Car Tissue</p>
-              
-            </div>
-          <!-- btn -->
-          <a href="prodetail3.html" class="buy-btn">View Details</a>
-    </div>
-</li>
- <!-- 7-->
- <li class="item-a">
-    <!-- product box -->
-    <div class="product-box">
-  
-            <!-- product name -->
-            <!-- img -->
-            <img src="IMAGES/Neww/Neww/stripped cups.jpg" alt="1234">
-
-            <div class="buy-price">
-                <p>Ripple Double Wall</p>
-             
-            </div>
-         <!-- btn -->
-         <a href="prodetail3.html" class="buy-btn">View Details</a>
-    </div>
-</li> <!-- 8 -->
-<li class="item-a">
-    <!-- product box -->
-    <div class="product-box">
-    
-            <!-- product name -->
-            <!-- img -->
-            <img src="IMAGES/sweetbags.jpg">
-
-            <div class="buy-price">
-                <p>Sweet Paper Bags</p>
-             
-            </div>
-   <!-- btn -->
-   <a href="prodetail4.html" class="buy-btn">View Details</a>
-    </div>
-</li>
-        </ul>
     </section>
-    
+    <!-- ===================Cta/featurebox====== -->
+    <div class="feature-section">
+      <div class="feature-box">
+        <i class="fa-regular fa-comments"></i>
+        <div>
+          <h4>Quick Assistance</h4>
+          <p>Available 24*7</p>
+        </div>
+      </div>
+      <div class="feature-box">
+        <i class="fa-regular fa-address-book"></i>
+        <div>
+          <h4>Certified Organic</h4>
+          <p>All items food-grade certified</p>
+        </div>
+      </div>
+      <div class="feature-box">
+        <i class="fa-regular fa-money-bill-1"></i>
+        <div>
+          <h4>Huge Savings</h4>
+          <p>At the lowest price</p>
+        </div>
+      </div>
+      <div class="feature-box">
+        <i class="fa-solid fa-recycle"></i>
+        <div>
+          <h4>Easy Returns</h4>
+          <p>No questions asked</p>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <!--========== carousel============== -->
+    <section class="product-slider">
+      <div class="slider-heading">
+        <h3> Best Selling Products:</h3>
+      </div> <br>
+      <ul id="autoWidth" class="cs-hidden">
+        <!-- 1 -->
+        <li class="item-a">
+          <!-- product box -->
+          <div class="product-box">
+            <img src="IMAGES/Neww/alu-rect-container.jpg" alt="">
+            <div class="img-content">
+              <p>Take Aways Aluminium</p>
+              <button><a href="prodetail1.html">VIEW DETAILS</a></button>
+            </div>
+          </div>
+        </li>
+        <!-- 2 -->
+        <li class="item-a">
+          <!-- product box -->
+          <div class="product-box">
+            <img src="IMAGES/Neww/sugarcane bagasse plates.jpg" alt="">
+            <div class="img-content">
+              <p>Sugarcane Bagasse Plates</p>
+              <button><a href="prodetail2.html">VIEW DETAILS</a></button>
+            </div>
+          </div>
+        </li>
 
 
-    
+        <!-- 3-->
+        <li class="item-a">
+          <div class="product-box">
+            <img src="IMAGES/paperbagsrestaurnt.jpg" alt="1234">
+            <div class="img-content">
+              <p>Restaurant Paper Bags</p>
+              <button><a href="prodetail4.html">VIEW DETAILS</a></button>
+            </div>
+          </div>
+
+        </li>
+        <!-- 4 -->
+        <li class="item-a">
+          <!-- product box -->
+          <div class="product-box">
+            <img src="IMAGES/Neww/mealtray11.jpg" alt="1234">
+            <div class="img-content">
+              <p>Meal Tray</p>
+              <button><a href="prodetail5.html">VIEW DETAILS</a></button>
+            </div>
+          </div>
+        </li>
+        <!-- 5 -->
+        <li class="item-a">
+          <!-- product box -->
+          <div class="product-box">
+            <img src="IMAGES/Neww/paperstraws.jpg" alt="1234">
+            <div class="img-content">
+              <p>PaperStraws</p>
+              <button><a href="prodetail3.html">VIEW DETAILS</a></button>
+            </div>
+          </div>
+        </li>
+
+
+        <!-- 6-->
+        <li class="item-a">
+          <!-- product box -->
+          <div class="product-box">
+            <img src="IMAGES/Neww/primiertissue.jpg" alt="1234">
+            <div class="img-content">
+              <p>Car Tissue</p>
+              <button><a href="prodetail3.html">VIEW DETAILS</a></button>
+            </div>
+          </div>
+        </li>
+        <!-- 7-->
+        <li class="item-a">
+          <!-- product box -->
+          <div class="product-box">
+            <img src="IMAGES/Neww/Neww/stripped cups.jpg" alt="1234">
+            <div class="img-content">
+              <p>Ripple Double Wall</p>
+
+              <button><a href="prodetail3.html">VIEW DETAILS</a></button>
+            </div>
+          </div>
+        </li> <!-- 8 -->
+        <li class="item-a">
+          <!-- product box -->
+          <div class="product-box">
+            <img src="IMAGES/sweetbags.jpg">
+            <div class="img-content">
+              <p>Sweet Paper Bags</p>
+              <button><a href="prodetail4.html">VIEW DETAILS</a></button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+
+
+
     <!-- about section -->
     <div class="heading">
       <h1>About us</h1>
@@ -302,7 +272,7 @@
     <div class="container11">
       <section class="about">
         <div class="about-image">
-          <img src="IMAGES/logo.jpg" alt="about">
+          <img src="IMAGES/logo-nobg.png" alt="about">
         </div>
         <div class="about-content">
           <p>At Unique Packaging Solutions, we stand as a beacon of change, offering
@@ -322,6 +292,7 @@
       <div class="best-seller">
         <div class="best-p1">
           <img src="IMAGES/Neww/Neww/paperboxes.jpg" alt="img">
+          <p>Pizza Boxes</p>
           <div class="best-p1-txt">
             <div class="name-of-p">
               <div class="buy-now">
@@ -332,6 +303,7 @@
         </div>
         <div class="best-p1">
           <img src="IMAGES/Neww/tepposkewes.jpg" alt="img">
+          <p>Skewers</p>
           <div class="best-p1-txt">
 
             <div class="buy-now">
@@ -341,6 +313,7 @@
         </div>
         <div class="best-p1">
           <img src="IMAGES/Neww/stripped cups.jpg" alt="img">
+          <p>Disposable Cups</p>
           <div class="best-p1-txt">
 
             <div class="buy-now">
@@ -349,7 +322,8 @@
           </div>
         </div>
         <div class="best-p1">
-          <img src="IMAGES/Neww/tissue car.jpg" alt="img">
+          <img src="IMAGES/glassbotlle.jpg" alt="img">
+          <p>Glass Bottles</p>
           <div class="best-p1-txt">
             <div class="buy-now">
               <button><a href="product-4.html">View More</a></button>
@@ -434,51 +408,55 @@
   </footer>
 
   <!-- script -->
-  <script src="https://code.jquery.com/jquery-3.7.1.js"
-  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"
-  integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- font awesome script -->
+  <script src="https://kit.fontawesome.com/393ff6bdca.js" crossorigin="anonymous"></script>
+  <!-- carosel slider script -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"
+    integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
+  <!-- main script page -->
   <script src="script.js"></script>
+  <!-- whatsapp icons script -->
   <script>
-    var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?38071';
+    var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?10985';
     var s = document.createElement('script');
     s.type = 'text/javascript';
     s.async = true;
     s.src = url;
     var options = {
-    "enabled":true,
-    "chatButtonSetting":{
-        "backgroundColor":"#add8e6",
-        "ctaText":"Chat with us",
-        "borderRadius":"25",
+      "enabled": true,
+      "chatButtonSetting": {
+        "backgroundColor": "#00e785",
+        "ctaText": "Chat with us",
+        "borderRadius": "25",
         "marginLeft": "0",
         "marginRight": "20",
         "marginBottom": "20",
-        "ctaIconWATI":false,
-        "position":"right"
-    },
-    "brandSetting":{
-        "brandName":"Wati",
-        "brandSubTitle":"undefined",
-        "brandImg":"https://www.wati.io/wp-content/uploads/2023/04/Wati-logo.svg",
-        "welcomeText":"",
-        "messageText":"Hello, %0A I have a query about the product.",
-        "backgroundColor":"#add8e6",
-        "ctaText":"Chat with us",
-        "borderRadius":"25",
-        "autoShow":false,
-        "phoneNumber":"919945883157"
-    }
+        "ctaIconWATI": false,
+        "position": "right"
+      },
+      "brandSetting": {
+        "brandName": "UniquePackagingSolutions",
+        "brandSubTitle": "undefined",
+        "brandImg": "https://www.wati.io/wp-content/uploads/2023/04/Wati-logo.svg",
+        "welcomeText": "",
+        "messageText": "Hello, %0A I have a query about the product.",
+        "backgroundColor": "#00e785",
+        "ctaText": "Chat with us",
+        "borderRadius": "25",
+        "autoShow": false,
+        "phoneNumber": "919945883157"
+      }
     };
-    s.onload = function() {
-        CreateWhatsappChatWidget(options);
+    s.onload = function () {
+      CreateWhatsappChatWidget(options);
     };
     var x = document.getElementsByTagName('script')[0];
     x.parentNode.insertBefore(s, x);
-</script>
+  </script>
 </body>
 
 </html>

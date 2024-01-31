@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <a href="#"><img src="IMAGES/logo.jpg" alt="Logo" class="logo"></a>
+        <a href="#"><img src="IMAGES/logo-nobg.png" alt="Logo" class="logo"></a>
         <div class="search-box">
           <div class="row">
             <input type="text" id="input-box" placeholder="Search anything..." autocomplete="off">
@@ -22,14 +22,26 @@
         <div class="mobile-menu" onclick="toggleMobileMenu()">☰</div>
       </header>
     
-      <nav>
+      <nav class="border">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="product.html">Our Products</a>
-    
+        <div class="dropdown">
+          <button class="dropbtn" class="border">All Products
+            <!-- <i class="fa fa-caret-down"></i> -->
+          </button>
+          <div class="dropdown-content">
+            <a href="product.html">Aluminium Containers</a>
+            <a href="product-3.html">Sugarcane Bagasse Products</a>
+            <a href="product-4.html">Disposable products</a>
+            <a href="product-2.html">Takeaways</a>
+            <a href="product-3.html">Skewers</a>
+            <a href="product-4.html">Icecream Cups</a>
+            <a href="product-4.html">Paperbags</a>
+          </div>
+        </div>
         <div class="dropdown">
           <button class="dropbtn">All Raw Materials
-            <i class="fa fa-caret-down"></i>
+            <!-- <i class="fa fa-caret-down"></i> -->
           </button>
           <div class="dropdown-content">
             <a href="product.html">Aluminium Containers</a>
@@ -199,38 +211,38 @@
 </footer>
 <script src="script.js"></script>
 <script>
-  var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?38071';
+  var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?10985';
   var s = document.createElement('script');
   s.type = 'text/javascript';
   s.async = true;
   s.src = url;
   var options = {
-  "enabled":true,
-  "chatButtonSetting":{
-      "backgroundColor":"#add8e6",
-      "ctaText":"Chat with us",
-      "borderRadius":"25",
+    "enabled": true,
+    "chatButtonSetting": {
+      "backgroundColor": "#00e785",
+      "ctaText": "Chat with us",
+      "borderRadius": "25",
       "marginLeft": "0",
       "marginRight": "20",
       "marginBottom": "20",
-      "ctaIconWATI":false,
-      "position":"right"
-  },
-  "brandSetting":{
-      "brandName":"Wati",
-      "brandSubTitle":"undefined",
-      "brandImg":"https://www.wati.io/wp-content/uploads/2023/04/Wati-logo.svg",
-      "welcomeText":"",
-      "messageText":"Hello, %0A I have a query about the product.",
-      "backgroundColor":"#add8e6",
-      "ctaText":"Chat with us",
-      "borderRadius":"25",
-      "autoShow":false,
-      "phoneNumber":"919945883157"
-  }
+      "ctaIconWATI": false,
+      "position": "right"
+    },
+    "brandSetting": {
+      "brandName": "UniquePackagingSolutions",
+      "brandSubTitle": "undefined",
+      "brandImg": "https://www.wati.io/wp-content/uploads/2023/04/Wati-logo.svg",
+      "welcomeText": "",
+      "messageText": "Hello, %0A I have a query about the product.",
+      "backgroundColor": "#00e785",
+      "ctaText": "Chat with us",
+      "borderRadius": "25",
+      "autoShow": false,
+      "phoneNumber": "919945883157"
+    }
   };
-  s.onload = function() {
-      CreateWhatsappChatWidget(options);
+  s.onload = function () {
+    CreateWhatsappChatWidget(options);
   };
   var x = document.getElementsByTagName('script')[0];
   x.parentNode.insertBefore(s, x);
