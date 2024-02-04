@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Roboto:ital,wght@0,100;0,500;0,700;1,100&display=swap'); */
 
 /* Reset and basic styles */ 
 *{
@@ -13,6 +14,7 @@ body {
 html, body{
   font-family: 'Poppins', sans-serif;
 }
+
 /* Header styles */
 header {
   /* background-image: ; */
@@ -21,7 +23,7 @@ header {
   padding: 10px;
   text-align: center;
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   align-items: center;
   height:120px;
 }
@@ -31,7 +33,8 @@ header {
   width: 150px;
   height:auto;
   border-radius: 50px;
-  margin-right: 60px;
+  margin-right: 80px;
+
 }
 /* margikn left 40 */
 
@@ -169,9 +172,9 @@ button .fa-solid{
   vertical-align: top;
   margin-left: 20px;
 }
-.dropdown:hover{
-  border: 1.5px solid white;
-  /* padding: 16px 14px; */
+.dropdown .dropbtn:hover{
+  border: 1.5px solid white; 
+   padding: 16px 14px;
 }
 
 .dropdown .dropbtn {
@@ -210,10 +213,28 @@ button .fa-solid{
   background-color: #ddd;
   
 }
+.dropbtn a:hover{
+  border: none;
+
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
   
+}
+
+/* facebook,youtube,ig icons */
+
+.icons1 {
+  position: relative;
+ 
+  left: 20px;
+}
+
+.icons1 i {
+  font-size: 32px;
+  align-items: center;
+  color: black;
 }
 
   
@@ -281,12 +302,13 @@ button .fa-solid{
   flex: 1;
   margin-right: 40px;
   overflow: hidden;
-  /* border-radius: 100px; */
+  border-radius: 100px;
 }
 .about-image img{
   max-width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  
   transition: all .6s ease-in-out;
 }
 .about-image:hover img{
@@ -663,11 +685,10 @@ nav {
   box-sizing: border-box;
   background-color: black;
   border-radius: 25px;
-  transition: transform 0.3s ease-in-out; /* Add a transition effect for the transform property */
+  transition: transform 0.3s ease-in-out; 
 }
-
 .seller .best-p1 img:hover {
-  transform: scale(1.1); /* Apply a scaling effect on hover */
+  transform: scale(1.1); 
 }
 .best-seller .buy-now a {
   text-decoration: none;
@@ -720,7 +741,7 @@ nav {
 }
 
 .seller .best-p1 img:hover {
-  transform: scale(1.1); /* Apply a scaling effect on hover */
+  transform: scale(1.1); 
 }}
 
 @media(min-width: 501px) and (max-width: 768px) {.best-seller {
@@ -732,7 +753,7 @@ nav {
 }
 
 .seller .best-p1 img:hover {
-  transform: scale(1.1); /* Apply a scaling effect on hover */
+  transform: scale(1.1); 
 }}
 
 
@@ -920,40 +941,33 @@ nav {
   }
 
 }
-
 /* Home Banner sliding images and text content */
 .home {
-  /* margin-block-start: 85px; */
   min-height: 360px;
   background-position: cover;
   background-size: 80%;
   text-align: center;
   background-color: white;
   background-image: url(IMAGES/homepage.png);
-
 }
 
-.home-title .span {
-  font-size: 30px;
+.home-title {
+  
   font-family: 'Poppins', sans-serif;
 }
 
 .home-text {
   color: black;
   margin-block: 15px 25px;
-  font-size: 20px;
-  /* font-weight: bold; */
   font-family: 'Poppins', sans-serif;
-
 }
-.home-title .span,
+
 .home-text,
 .slide-container .prev,
 .slide-container .next {
   font-family: 'Montserrat', sans-serif; 
   font-weight: bold; 
 }
-
 
 .home .btn {
   margin-inline: auto;
@@ -962,7 +976,8 @@ nav {
 .home .btn:is(:hover, :focus) {
   background-color: var(--portland-orange);
 }
-.slide.fade{
+
+.slide.fade {
   padding-top: 20px;
 }
 
@@ -982,15 +997,17 @@ nav {
   height: 20px;
   color: #333;
   border-radius: 50%;
-  background-color:#A3672B;
+  background-color: #A3672B;
 }
 
 .dots-container .dot.active {
   border: 5px solid lightblue;
 }
-.flex{
+
+.flex {
   display: flex;
 }
+
 /* Main Container and Slides */
 .slide-container {
   position: relative;
@@ -1002,15 +1019,33 @@ nav {
   order: 0;
   margin-right: 20px; 
 }
-.text-content h4{
-  font-size: 12px;
-}
-.text-content h1{
-  color: #333333;
-  line-height: 1.3;
-  font-size: 30px;
+.text-content p{
+  font-size: 19px;
 }
 
+.text-content h4{
+  font-size: 24px;
+}
+
+.text-content h1 {
+  color: #333333;
+  line-height: 1.3;
+  font-size:39px;
+}
+.shopnow-btn{
+  background-color: lightblue;
+  padding: 10px;
+  border-radius: 20px;
+align-items: center;
+display: inline-block;
+font-weight: 550;
+
+}
+.shopnow-btn:hover{
+  background-color:#A3672B;
+  color: white;
+  transition: transform 0.3s ease-in-out;  
+}
 
 .slide-container .slide {
   display: none;
@@ -1064,58 +1099,61 @@ nav {
 
 /* Media Queries for Responsive Design */
 @media only screen and (max-width: 767px) {
-
   /* Mobile screens */
   .container {
-      flex-direction: column-reverse;
-      align-items: center;
+    flex-direction: column-reverse;
+    align-items: center;
   }
 
   .text-content {
-      max-width: 100%;
-      text-align: center;
+    max-width: 100%;
+    text-align: center;
+    margin: 0; /* Remove margin for mobile screens */
   }
 
   .slide-container {
-      max-width: 100%;
+    max-width: 100%;
+    margin-right: 0; /* Remove right margin for mobile screens */
   }
 
   .dots-container {
-      position: static;
-      margin-top: 10px;
+    position: static;
+    margin-top: 10px;
   }
 
   .slide-container .slide {
-      max-width: 100%;
-      margin-bottom: 20px;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Decrease Image Size for Mobile Screens */
+  .slide-container .slide img {
+    width: 100%; /* Adjusted width for mobile screens */
+    border-radius: 10px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-
   /* Laptop screens and above */
-  @media only screen and (min-width: 768px) {
-    /* Laptop screens and above */
-    .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-  
-    .text-content {
-      max-width: 45%;
-      order: 0;
-      margin-left: 80px; /* Adjust margin as needed */
-      text-align: center; /* Center the text content on laptop screens */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    }
-  
-    .slide-container {
-      max-width: 50%;
-      order: 1;
-      margin-right: 50px;
-    }
-  }}
+  .text-content {
+    max-width: 45%;
+    order: 0;
+    margin-left: 80px;
+    text-align: center;
+  }
+
+  .slide-container {
+    max-width: 50%;
+    order: 1;
+    margin-right: 50px;
+  }
+}
 
   
 /* product carousel */
@@ -1202,7 +1240,7 @@ a {
 
 }
  .img-content p {
-  font-size: 1.6rem;
+  font-size: 14px;
 }
  .img-content button {
   border: none;
@@ -1218,9 +1256,15 @@ a {
   opacity: 1;
   top: 50%;
 }
+.img-content button{
+  background: white;
+color: black;
+font-size: 12px;
+border-radius: 25px;
+}
 
 .img-content button:hover {
-  /* background: white; */
+  /* background: white;/ */
   color: black;
 }
 
@@ -1230,9 +1274,10 @@ a {
 
 .img-content a {
   text-decoration: none;
-  font-size: 1.1rem;
-  color: #fff;
+  font-size: 12px;
+  color:black;
   transition: 0.3s;
+  display: flex;
 }
 
  .img-content a:hover {
@@ -1410,4 +1455,36 @@ padding:15px;
 .feature-box p {
   font-size: 12px;
 }
+}
+
+
+/* whatsapp chat button */
+
+/* WhatsApp Chat Button Styles */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px; /* Adjust width as needed */
+  height: 60px; /* Adjust height as needed */
+  background-color: #25D366; /* WhatsApp green color */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* Media Query for WhatsApp Button on Mobile Screens */
+@media only screen and (max-width: 767px) {
+  .whatsapp-button {
+    width: 50px; /* Adjust width for smaller screens */
+    height: 50px; /* Adjust height for smaller screens */
+    font-size: 18px; /* Adjust font size for smaller screens */
+    bottom: 10px; /* Adjust bottom spacing for smaller screens */
+    right: 10px; /* Adjust right spacing for smaller screens */
+  }
 }

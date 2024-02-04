@@ -1,3 +1,4 @@
+// mobile toggle menu
 function toggleMobileMenu() {
     let nav = document.querySelector("nav");
     

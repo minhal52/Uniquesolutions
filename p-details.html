@@ -1,0 +1,2388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prodetails.css">
+    <title>Product Details</title>
+    <style>
+        body {
+            background-image: url(IMAGES/homepage.png);
+        }
+
+        .product {
+            background-image: url("IMAGES/homepage.png");
+            background-size: cover;
+            display: none;
+            /* padding: 1em; */
+            border: 1px solid #ddd;
+            /* margin: 1em; */
+            background-color: #f9f9f9;
+            overflow: hidden;
+            height: auto;
+
+            /* Clear float */
+
+        }
+
+        .product img {
+            float: left;
+            margin-right: 10px;
+            max-width: 100%;
+            height: 450px;
+            width: 450px;
+            box-sizing: border-box;
+            /* border: solid black; */
+            align-items: center;
+
+        }
+
+        .product-details {
+            float: right;
+            width: 70%;
+            gap: 30px;
+            /* Adjust the width as needed */
+        }
+
+        .product-tag22 {
+            color: #888;
+            /* margin-bottom: 10px; */
+            font-size: 22px;
+        }
+
+        p {
+            color: goldenrod;
+            font-size: 22px;
+        }
+
+        li {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 1.5;
+            gap: 2px;
+        }
+
+        h2 {
+            font-size: 34px;
+            font-weight: 700;
+        }
+
+        /* getquote btn */
+        .get-quote-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 0 auto;
+        }
+
+        .product-details .get-quote-button:hover {
+            background-color: #45a049;
+        }
+
+        .go-back-button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 20px;
+            /* Add margin at the bottom to create a gap */
+            display: inline-block;
+            /* Ensures it's treated as a block element within the container */
+        }
+
+        .go-back-button:hover {
+            background-color: #2980b9;
+        }
+
+
+        /* responsive */
+        @media (max-width: 600px) {
+            nav li {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            .product img {
+                float: none;
+                margin-right: 0;
+                max-width: 100%;
+            }
+
+            .product-details {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        .table-heading {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#"><img src="IMAGES/logo-nobg.png" alt="Logo" class="logo"></a>
+        <div class="search-box">
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Search anything..." autocomplete="off">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="result-box"></div>
+        </div>
+        <div class="icons1">
+            <button><i class="fa-brands fa-facebook"></i></button>
+            <button><i class="fa-brands fa-instagram"></i></button>
+            <button><i class="fa-brands fa-youtube"></i></button>
+        </div>
+        <div class="mobile-menu" onclick="toggleMobileMenu()">☰</div>
+
+    </header>
+
+    <nav class="border">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <div class="dropdown">
+            <a href="product.html">All Products</a>
+            <!-- <i class="fa fa-caret-down"></i> -->
+            <div class="dropdown-content">
+                <a href="product.html">Aluminium Containers</a>
+                <a href="product-3.html">Sugarcane Bagasse Products</a>
+                <a href="product-4.html">Disposable products</a>
+                <a href="product-2.html">Takeaways</a>
+                <a href="product-3.html">Skewers</a>
+                <a href="product-4.html">Icecream Cups</a>
+                <a href="product-4.html">Paperbags</a>
+            </div>
+        </div>
+        <div class="dropdown" class="border">
+            <button class="dropbtn">All Raw Materials
+                <!-- <i class="fa fa-caret-down"></i> -->
+            </button>
+            <div class="dropdown-content">
+                <a href="product.html">Aluminium Containers</a>
+                <a href="product-3.html">Sugarcane Bagasse Products</a>
+                <a href="product-4.html">Disposable products</a>
+                <a href="product-2.html">Takeaways</a>
+                <a href="product-3.html">Skewers</a>
+                <a href="product-4.html">Icecream Cups</a>
+                <a href="product-4.html">Paperbags</a>
+            </div>
+        </div>
+        <a href="contact.html">Contact us</a>
+
+
+    </nav>
+    <!-- Product 1 Details Container -->
+    <div>
+        <div id="product1" class="product">
+
+            <img src="IMAGES/Neww/alu-rect-container.jpg" alt="Product 2 Image">
+            <div class="product-details">
+                <h2>210 ML Aluminium Foil Container</h2>
+                <div class="product-tag22">Kitchen and Storage Containers</div>
+                <p>★★★★★</p>
+                <ul>
+                    <li>Shape: Rectangle</li>
+                    <li>Volume:210 ML</li>
+                    <li>Packaging: 2000 Nos </li>
+                </ul>
+                <button class="get-quote-button"><a
+                        href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product"
+                        target="_blank">Get Quote</a></button>
+                <button class="go-back-button" onclick="goBack()">Go Back</button>
+                <!-- <button class="buy-button"></button> -->
+            </div>
+            <table id="product1">
+                <tr>
+                    <th>Sizes</th>
+                    <th>Shape</th>
+                    <th>Pack Size</th>
+                </tr>
+    
+                <tr>
+                    <td>120 ml</td>
+                    <td>Square</td>
+                    <td>5000 Nos</td>
+                </tr>
+                <tr>
+                    <td>210 ml</td>
+                    <td>Rectangle</td>
+                    <td>2000 Nos</td>
+                </tr>
+                <tr>
+                    <td>250 ml</td>
+                    <td>Rectangle</td>
+                    <td>2000 Nos</td>
+                </tr>
+                <tr>
+                    <td>300 ml</td>
+                    <td>Square</td>
+                    <td>2000 Nos</td>
+                </tr>
+                <tr>
+                    <td>450 ml</td>
+                    <td>Square</td>
+                    <td>1500 Nos</td>
+                </tr>
+                <tr>
+                    <td>600 ml</td>
+                    <td>Oval</td>
+                    <td>1000 Nos</td>
+                </tr>
+                <tr>
+                    <td>660 ml</td>
+                    <td>Rectangle</td>
+                    <td>1000 Nos</td>
+                </tr>
+                <tr>
+                    <td>750 ml</td>
+                    <td>Rectangle</td>
+                    <td>1000 Nos</td>
+                </tr>
+                <tr>
+                    <td>900 ml</td>
+                    <td>Rectangle</td>
+                    <td>800 Nos</td>
+                </tr>
+                <tr>
+                    <td>1240 ml</td>
+                    <td>Rectangle</td>
+                    <td>600 Nos</td>
+                </tr>
+                <tr>
+                    <td>3 Compartment</td>
+                    <td>Rectangle</td>
+                    <td>1200 Nos</td>
+                </tr>
+            </table>
+        </div>
+
+    
+    </div>
+    </div>
+
+    <!-- Product 2 Details Container -->
+    <div id="product2" class="product">
+        <img src="IMAGES/Neww/alu23.jpg" alt="Product 2 Image">
+        <div class="product-details">
+            <h2>250 ML Aluminium Foil Container</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p> ★★★★★</p>
+            <ul>
+                <li>Shape: Rectangle</li>
+                <li>Volume:250 ML</li>
+                <li>Packaging: 2000 Nos </li>
+            </ul>
+            <button class="get-quote-button"><a
+                    href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product"
+                    target="_blank">Get Quote</a></button>
+            <button class="go-back-button" onclick="goBack()">Go Back</button>
+        </div>
+        <br>
+        <table>
+            <tr>
+                <th>Sizes</th>
+                <th>Shape</th>
+                <th>Pack Size</th>
+            </tr>
+            <!-- 10 rows of data -->
+            <tr>
+                <td>120 ml</td>
+                <td>Square</td>
+                <td>5000 Nos</td>
+            </tr>
+            <tr>
+                <td>210 ml</td>
+                <td>Rectangle</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>250 ml</td>
+                <td>Rectangle</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>300 ml</td>
+                <td>Square</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>450 ml</td>
+                <td>Square</td>
+                <td>1500 Nos</td>
+            </tr>
+            <tr>
+                <td>600 ml</td>
+                <td>Oval</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>660 ml</td>
+                <td>Rectangle</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>750 ml</td>
+                <td>Rectangle</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>900 ml</td>
+                <td>Rectangle</td>
+                <td>800 Nos</td>
+            </tr>
+            <tr>
+                <td>1240 ml</td>
+                <td>Rectangle</td>
+                <td>600 Nos</td>
+            </tr>
+            <tr>
+                <td>3 Compartment</td>
+                <td>Rectangle</td>
+                <td>1200 Nos</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Product 3 Details Container -->
+    <div id="product3" class="product">
+        <img src="IMAGES/Neww/alu24.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>450 ML Aluminium Foil Container</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Square</li>
+                <li>Volume:450 ML</li>
+                <li>Packaging: 1500 Nos </li>
+                <!-- Add more details as needed -->
+            </ul>
+        </div>
+        <table>
+            <tr>
+                <th>Sizes</th>
+                <th>Shape</th>
+                <th>Pack Size</th>
+            </tr>
+            <!-- 10 rows of data -->
+            <tr>
+                <td>120 ml</td>
+                <td>Square</td>
+                <td>5000 Nos</td>
+            </tr>
+            <tr>
+                <td>210 ml</td>
+                <td>Rectangle</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>250 ml</td>
+                <td>Rectangle</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>300 ml</td>
+                <td>Square</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>450 ml</td>
+                <td>Square</td>
+                <td>1500 Nos</td>
+            </tr>
+            <tr>
+                <td>600 ml</td>
+                <td>Oval</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>660 ml</td>
+                <td>Rectangle</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>750 ml</td>
+                <td>Rectangle</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>900 ml</td>
+                <td>Rectangle</td>
+                <td>800 Nos</td>
+            </tr>
+            <tr>
+                <td>1240 ml</td>
+                <td>Rectangle</td>
+                <td>600 Nos</td>
+            </tr>
+            <tr>
+                <td>3 Compartment</td>
+                <td>Rectangle</td>
+                <td>1200 Nos</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Product 4 Details Container -->
+    <div id="product4" class="product">
+        <img src="IMAGES/Neww/aluplate.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Aluminium Foil Meal Plates</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Round</li>
+                <li>Size: 6/8/10/12 inches</li>
+                <li>Packaging: 2000/1000/600/600 Nos </li>
+            </ul>
+        </div>
+        <table>
+            <tr>
+                <th>Sizes</th>
+                <th>Shape</th>
+                <th>Pack Size</th>
+            </tr>
+            <!-- 10 rows of data -->
+            <tr>
+                <td>120 ml</td>
+                <td>Square</td>
+                <td>5000 Nos</td>
+            </tr>
+            <tr>
+                <td>210 ml</td>
+                <td>Rectangle</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>250 ml</td>
+                <td>Rectangle</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>300 ml</td>
+                <td>Square</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>450 ml</td>
+                <td>Square</td>
+                <td>1500 Nos</td>
+            </tr>
+            <tr>
+                <td>600 ml</td>
+                <td>Oval</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>660 ml</td>
+                <td>Rectangle</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>750 ml</td>
+                <td>Rectangle</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>900 ml</td>
+                <td>Rectangle</td>
+                <td>800 Nos</td>
+            </tr>
+            <tr>
+                <td>1240 ml</td>
+                <td>Rectangle</td>
+                <td>600 Nos</td>
+            </tr>
+            <tr>
+                <td>3 Compartment</td>
+                <td>Rectangle</td>
+                <td>1200 Nos</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Product 5 Details Container -->
+    <div id="product5" class="product">
+        <img src="IMAGES/Neww/alusquare.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2> 120 ML Aluminium Foil Containers</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape:Square</li>
+                <li>Volume:120 ML</li>
+                <li>Packaging:1500 Nos </li>
+            </ul>
+        </div>
+        <table>
+            <tr>
+                <th>Sizes</th>
+                <th>Shape</th>
+                <th>Pack Size</th>
+            </tr>
+            <!-- 10 rows of data -->
+            <tr>
+                <td>120 ml</td>
+                <td>Square</td>
+                <td>5000 Nos</td>
+            </tr>
+            <tr>
+                <td>210 ml</td>
+                <td>Rectangle</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>250 ml</td>
+                <td>Rectangle</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>300 ml</td>
+                <td>Square</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>450 ml</td>
+                <td>Square</td>
+                <td>1500 Nos</td>
+            </tr>
+            <tr>
+                <td>600 ml</td>
+                <td>Oval</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>660 ml</td>
+                <td>Rectangle</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>750 ml</td>
+                <td>Rectangle</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>900 ml</td>
+                <td>Rectangle</td>
+                <td>800 Nos</td>
+            </tr>
+            <tr>
+                <td>1240 ml</td>
+                <td>Rectangle</td>
+                <td>600 Nos</td>
+            </tr>
+            <tr>
+                <td>3 Compartment</td>
+                <td>Rectangle</td>
+                <td>1200 Nos</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Product 6 Details Container -->
+    <div id="product6" class="product">
+        <img src="IMAGES/Neww/container alu.jpg" alt="Product 6 Image">
+        <div class="product-details">
+            <h2>100 ML Bakery Foil Container</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Round</li>
+                <li>Volume: 100 ML</li>
+                <li>Packaging:5000 Nos </li>
+            </ul>
+        </div>
+        <table>
+            <tr>
+                <th>Sizes</th>
+                <th>Shape</th>
+                <th>Pack Size</th>
+            </tr>
+            <!-- 10 rows of data -->
+            <tr>
+                <td>120 ml</td>
+                <td>Square</td>
+                <td>5000 Nos</td>
+            </tr>
+            <tr>
+                <td>210 ml</td>
+                <td>Rectangle</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>250 ml</td>
+                <td>Rectangle</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>300 ml</td>
+                <td>Square</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>450 ml</td>
+                <td>Square</td>
+                <td>1500 Nos</td>
+            </tr>
+            <tr>
+                <td>600 ml</td>
+                <td>Oval</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>660 ml</td>
+                <td>Rectangle</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>750 ml</td>
+                <td>Rectangle</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>900 ml</td>
+                <td>Rectangle</td>
+                <td>800 Nos</td>
+            </tr>
+            <tr>
+                <td>1240 ml</td>
+                <td>Rectangle</td>
+                <td>600 Nos</td>
+            </tr>
+            <tr>
+                <td>3 Compartment</td>
+                <td>Rectangle</td>
+                <td>1200 Nos</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Product 7 Details Container -->
+    <div id="product7" class="product">
+        <img src="IMAGES/Neww/alu 22.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Oval Containers</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape:Oval</li>
+                <li>Volume: 600 ML</li>
+                <li>Packaging:1000 Nos </li>
+            </ul>
+        </div>
+        <table>
+            <tr>
+                <th>Sizes</th>
+                <th>Shape</th>
+                <th>Pack Size</th>
+            </tr>
+            <!-- 10 rows of data -->
+            <tr>
+                <td>120 ml</td>
+                <td>Square</td>
+                <td>5000 Nos</td>
+            </tr>
+            <tr>
+                <td>210 ml</td>
+                <td>Rectangle</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>250 ml</td>
+                <td>Rectangle</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>300 ml</td>
+                <td>Square</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>450 ml</td>
+                <td>Square</td>
+                <td>1500 Nos</td>
+            </tr>
+            <tr>
+                <td>600 ml</td>
+                <td>Oval</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>660 ml</td>
+                <td>Rectangle</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>750 ml</td>
+                <td>Rectangle</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>900 ml</td>
+                <td>Rectangle</td>
+                <td>800 Nos</td>
+            </tr>
+            <tr>
+                <td>1240 ml</td>
+                <td>Rectangle</td>
+                <td>600 Nos</td>
+            </tr>
+            <tr>
+                <td>3 Compartment</td>
+                <td>Rectangle</td>
+                <td>1200 Nos</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Product 8 Details Container -->
+    <div id="product8" class="product">
+        <img src="IMAGES/Neww/alu-bakery.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Bakery Foil Containers</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape:Round</li>
+                <li>Volume: 1000 ML</li>
+                <li>Packaging:1000 Nos </li>
+            </ul>
+        </div>
+        <table>
+            <tr>
+                <th>Sizes</th>
+                <th>Shape</th>
+                <th>Pack Size</th>
+            </tr>
+            <!-- 10 rows of data -->
+            <tr>
+                <td>120 ml</td>
+                <td>Square</td>
+                <td>5000 Nos</td>
+            </tr>
+            <tr>
+                <td>210 ml</td>
+                <td>Rectangle</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>250 ml</td>
+                <td>Rectangle</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>300 ml</td>
+                <td>Square</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>450 ml</td>
+                <td>Square</td>
+                <td>1500 Nos</td>
+            </tr>
+            <tr>
+                <td>600 ml</td>
+                <td>Oval</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>660 ml</td>
+                <td>Rectangle</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>750 ml</td>
+                <td>Rectangle</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>900 ml</td>
+                <td>Rectangle</td>
+                <td>800 Nos</td>
+            </tr>
+            <tr>
+                <td>1240 ml</td>
+                <td>Rectangle</td>
+                <td>600 Nos</td>
+            </tr>
+            <tr>
+                <td>3 Compartment</td>
+                <td>Rectangle</td>
+                <td>1200 Nos</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Product 9 Details Container -->
+    <div id="product9" class="product">
+        <img src="IMAGES/Neww/alu-muffin.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>140 ML Muffin Bakery Foil Containers</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape:Round</li>
+                <li>Volume: 140 ML</li>
+                <li>Packaging:5000 Nos </li>
+            </ul>
+        </div>
+        <table>
+            <tr>
+                <th>Sizes</th>
+                <th>Shape</th>
+                <th>Pack Size</th>
+            </tr>
+            <!-- 10 rows of data -->
+            <tr>
+                <td>120 ml</td>
+                <td>Square</td>
+                <td>5000 Nos</td>
+            </tr>
+            <tr>
+                <td>210 ml</td>
+                <td>Rectangle</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>250 ml</td>
+                <td>Rectangle</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>300 ml</td>
+                <td>Square</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>450 ml</td>
+                <td>Square</td>
+                <td>1500 Nos</td>
+            </tr>
+            <tr>
+                <td>600 ml</td>
+                <td>Oval</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>660 ml</td>
+                <td>Rectangle</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>750 ml</td>
+                <td>Rectangle</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>900 ml</td>
+                <td>Rectangle</td>
+                <td>800 Nos</td>
+            </tr>
+            <tr>
+                <td>1240 ml</td>
+                <td>Rectangle</td>
+                <td>600 Nos</td>
+            </tr>
+            <tr>
+                <td>3 Compartment</td>
+                <td>Rectangle</td>
+                <td>1200 Nos</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Product 10 Details Container -->
+    <div id="product10" class="product">
+        <img src="IMAGES/Neww/alu-oval.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>120 ML Bakery Foil Container</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape:Oval</li>
+                <li>Volume: 1000 ML</li>
+                <li>Packaging:5000 Nos </li>
+            </ul>
+        </div>
+        <table>
+            <tr>
+                <th>Sizes</th>
+                <th>Shape</th>
+                <th>Pack Size</th>
+            </tr>
+            <!-- 10 rows of data -->
+            <tr>
+                <td>120 ml</td>
+                <td>Square</td>
+                <td>5000 Nos</td>
+            </tr>
+            <tr>
+                <td>210 ml</td>
+                <td>Rectangle</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>250 ml</td>
+                <td>Rectangle</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>300 ml</td>
+                <td>Square</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>450 ml</td>
+                <td>Square</td>
+                <td>1500 Nos</td>
+            </tr>
+            <tr>
+                <td>600 ml</td>
+                <td>Oval</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>660 ml</td>
+                <td>Rectangle</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>750 ml</td>
+                <td>Rectangle</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>900 ml</td>
+                <td>Rectangle</td>
+                <td>800 Nos</td>
+            </tr>
+            <tr>
+                <td>1240 ml</td>
+                <td>Rectangle</td>
+                <td>600 Nos</td>
+            </tr>
+            <tr>
+                <td>3 Compartment</td>
+                <td>Rectangle</td>
+                <td>1200 Nos</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Product 11 Details Container -->
+    <div id="product11" class="product">
+        <img src="IMAGES/Neww/aluminium covers.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Aluminium Covers</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape:Square</li>
+                <li>Size : Regular</li>
+                <li>Packaging:2000 Nos </li>
+            </ul>
+        </div>
+        <table>
+            <tr>
+                <th>Sizes</th>
+                <th>Shape</th>
+                <th>Pack Size</th>
+            </tr>
+            <!-- 10 rows of data -->
+            <tr>
+                <td>120 ml</td>
+                <td>Square</td>
+                <td>5000 Nos</td>
+            </tr>
+            <tr>
+                <td>210 ml</td>
+                <td>Rectangle</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>250 ml</td>
+                <td>Rectangle</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>300 ml</td>
+                <td>Square</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>450 ml</td>
+                <td>Square</td>
+                <td>1500 Nos</td>
+            </tr>
+            <tr>
+                <td>600 ml</td>
+                <td>Oval</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>660 ml</td>
+                <td>Rectangle</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>750 ml</td>
+                <td>Rectangle</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>900 ml</td>
+                <td>Rectangle</td>
+                <td>800 Nos</td>
+            </tr>
+            <tr>
+                <td>1240 ml</td>
+                <td>Rectangle</td>
+                <td>600 Nos</td>
+            </tr>
+            <tr>
+                <td>3 Compartment</td>
+                <td>Rectangle</td>
+                <td>1200 Nos</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Product 12 Details Container -->
+    <div id="product12" class="product">
+        <img src="IMAGES/hmebb44.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Airway Aluminium Foil Containers</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape:Square/Rectangle</li>
+                <li>Volume:120/250/300/450 ML</li>
+                <li>Packaging:5000/2000/1500 Nos </li>
+            </ul>
+        </div>
+        <table>
+            <tr>
+                <th>Sizes</th>
+                <th>Shape</th>
+                <th>Pack Size</th>
+            </tr>
+            <!-- 10 rows of data -->
+            <tr>
+                <td>120 ml</td>
+                <td>Square</td>
+                <td>5000 Nos</td>
+            </tr>
+            <tr>
+                <td>210 ml</td>
+                <td>Rectangle</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>250 ml</td>
+                <td>Rectangle</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>300 ml</td>
+                <td>Square</td>
+                <td>2000 Nos</td>
+            </tr>
+            <tr>
+                <td>450 ml</td>
+                <td>Square</td>
+                <td>1500 Nos</td>
+            </tr>
+            <tr>
+                <td>600 ml</td>
+                <td>Oval</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>660 ml</td>
+                <td>Rectangle</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>750 ml</td>
+                <td>Rectangle</td>
+                <td>1000 Nos</td>
+            </tr>
+            <tr>
+                <td>900 ml</td>
+                <td>Rectangle</td>
+                <td>800 Nos</td>
+            </tr>
+            <tr>
+                <td>1240 ml</td>
+                <td>Rectangle</td>
+                <td>600 Nos</td>
+            </tr>
+            <tr>
+                <td>3 Compartment</td>
+                <td>Rectangle</td>
+                <td>1200 Nos</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Product 13 Details Container -->
+    <div id="product13" class="product">
+        <img src="IMAGES/Neww/Neww/99container.png" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>9*9 Aluminium Foil Containers</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape:9*9</li>
+                <li>Size:Available Different Sizes</li>
+                <li>Volume:2100/1550 ML</li>
+                <li>Packaging:600 Nos </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Product 14 Details Container -->
+    <div id="product14" class="product">
+        <img src="IMAGES/Neww/Neww/ddfoil.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Double Diamond Foil Rolls</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Type:Foil Rolls</li>
+                <li>Volume: 1 kg</li>
+                <li>Packaging:25 / 100 Nos </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Product 15 Details Container -->
+    <div id="product15" class="product">
+        <img src="IMAGES/Neww/Neww/foilroll.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Aluminium Foil Rolls</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Type: Foil Rolls</li>
+                <li>Volume:9/18/22 Mtr , 1kg </li>
+                <li>Packaging:25/100 Nos </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Product 16 Details Container -->
+    <div id="product16" class="product">
+        <img src="IMAGES/Neww/vedica wrap.png" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Vedica Foil Rolls</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Type: Foil Rolls</li>
+                <li>Volume: 1kg </li>
+                <li>Packaging:25/100 Nos </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Product 17 Details Container -->
+    <div id="product17" class="product">
+        <img src="product1.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Aluminium Foil Pre Cut Sheets</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Type: Aluminium Foil Sheets</li>
+                <li>Size: Available in Different Sizes </li>
+                <li>Packaging:5000/3000/2000 Nos </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- ===========product2.html======== -->
+    <!-- Product 18 Details Container -->
+    <div id="product18" class="product">
+        <img src="IMAGES/Neww/Neww/plastic container round.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Round Plastic Containers</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Round</li>
+                <li>Volume:50/100/250/300/450 ML </li>
+                <li>Color: Black,TP & White </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Product 19 Details Container -->
+    <div id="product19" class="product">
+        <img src="IMAGES/Neww/mealtray11.jpg" alt="Product 2 Image">
+        <div class="product-details">
+            <h2>Meal Trays</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Size: 2/3/4/5/8 Compartment</li>
+                <li>Color: Black,TP & White </li>
+                <li>Packaging:900/810/360/520 Nos</li>
+            </ul>
+        </div>
+        <table>
+            <tr>
+                <th style="width:auto;">Sizes</th>
+                <th style="width:auto;text-align: center;">Colors</th>
+                <th>Pack Size</th>
+            </tr>
+            <!-- 10 rows of data -->
+            <tr>
+                <td>2-Compartment </td>
+                <td>Black,TP & White</td>
+                <td>900 Nos</td>
+            </tr>
+            <tr>
+                <td>3-Compartment Mini </td>
+                <td>Black,TP & White</td>
+                <td>900 Nos</td>
+            </tr>
+            <tr>
+                <td>3-Compartment XL</td>
+                <td>Black,TP & White</td>
+                <td>810 Nos</td>
+            </tr>
+            <tr>
+                <td>4-Compartment</td>
+                <td>Black,TP & White</td>
+                <td>810 Nos</td>
+            </tr>
+            <tr>
+                <td>5-Compartment</td>
+                <td>Black,TP & White</td>
+                <td>810 Nos</td>
+            </tr>
+            <tr>
+                <td>8-Compartment Regular</td>
+                <td>Black,TP & White</td>
+                <td>360 Nos</td>
+            </tr>
+            <tr>
+                <td>8-Compartment Deluxe</td>
+                <td>Black,TP & White</td>
+                <td>520 Nos</td>
+            </tr>
+
+        </table>
+    </div>
+    <!-- Product 20 Details Container -->
+    <div id="product20" class="product">
+        <img src="IMAGES/Neww/Neww/octacontainer.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Octa Containers</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape:Octa</li>
+                <li>Volume:200-1200 ML </li>
+                <li>Color: Black,TP & White </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Product 21 Details Container -->
+    <div id="product21" class="product">
+        <img src="IMAGES/Neww/plastic mealtray.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Meal Takeaway Containers</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Size: 2/3/4/5/8 Compartment</li>
+                <li>Color: Black,TP & White </li>
+                <li>Packaging:900/810/360/520 Nos</li>
+            </ul>
+        </div>
+        <table>
+            <tr>
+                <th style="width:auto;">Sizes</th>
+                <th style="width:auto;text-align: center;">Colors</th>
+                <th>Pack Size</th>
+            </tr>
+            <!-- 10 rows of data -->
+            <tr>
+                <td>2-Compartment </td>
+                <td>Black,TP & White</td>
+                <td>900 Nos</td>
+            </tr>
+            <tr>
+                <td>3-Compartment Mini </td>
+                <td>Black,TP & White</td>
+                <td>900 Nos</td>
+            </tr>
+            <tr>
+                <td>3-Compartment XL</td>
+                <td>Black,TP & White</td>
+                <td>810 Nos</td>
+            </tr>
+            <tr>
+                <td>4-Compartment</td>
+                <td>Black,TP & White</td>
+                <td>810 Nos</td>
+            </tr>
+            <tr>
+                <td>5-Compartment</td>
+                <td>Black,TP & White</td>
+                <td>810 Nos</td>
+            </tr>
+            <tr>
+                <td>8-Compartment Regular</td>
+                <td>Black,TP & White</td>
+                <td>360 Nos</td>
+            </tr>
+            <tr>
+                <td>8-Compartment Deluxe</td>
+                <td>Black,TP & White</td>
+                <td>520 Nos</td>
+            </tr>
+
+        </table>
+    </div>
+    <!-- Product 22 Details Container -->
+    <div id="product22" class="product">
+        <img src="IMAGES/Neww/containerlid.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Rectangle Containers With Lid</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Rectangle</li>
+                <li>Volume:250/300/450/750/1000 ML </li>
+                <li>Color: Black,TP & White </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Product 23 Details Container -->
+    <div id="product23" class="product">
+        <img src="IMAGES/Neww/Neww/containers.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Hinged Containers</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Rectangle / Square / Round</li>
+                <li>Volume:250/350/450/550/700/900 ML </li>
+                <li>Color: TP White</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Product 24 Details Container -->
+    <div id="product24" class="product">
+        <img src="IMAGES/Neww/plasticcontainerlid.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Round Plastic Containers</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Round</li>
+                <li>Color: Black,TP & White </li>
+                <li>Volume:50/100/250/300/450 ML </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Product 25 Details Container -->
+    <div id="product25" class="product">
+        <img src="IMAGES/Neww/Neww/rectcontainer.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Square Plastic Containers</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Square</li>
+                <li>Color: Black,TP & White </li>
+                <li>Volume:250/500/750 ML </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Product 26 Details Container -->
+    <div id="product26" class="product">
+        <img src="IMAGES/Neww/Neww/reseries.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>RE Series Plastic Containers</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Rectangle</li>
+                <li>Color: Black,TP & White </li>
+                <li>Volume:450/ 700/800/900/1050 ML </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Product 27 Details Container -->
+    <div id="product27" class="product">
+        <img src="IMAGES/Neww/Neww/roseries.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>RO Series Plastic Containers</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Round</li>
+                <li>Color: Black,TP & White </li>
+                <li>Volume:300-1440 ML </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Product 28 Details Container -->
+    <div id="product28" class="product">
+        <img src="IMAGES/Neww/Neww/roundcontainerlid.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Round Plastic Containers</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Round</li>
+                <li>Color: Black,TP & White </li>
+                <li>Volume:250/450/700 ML </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Product 29 Details Container -->
+    <div id="product29" class="product">
+        <img src="IMAGES/Neww/Neww/bucket.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Bucket Plastic Containers</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Round</li>
+                <li>Color: Black,TP & White </li>
+                <li>Volume:1000/1400/2000 ML </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Product 30 Details Container -->
+    <div id="product30" class="product">
+        <img src="IMAGES/Neww/Neww/saucedip.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Sauce / Chutney Dip Plastic Containers</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Round Hinged</li>
+                <li>Color: Black,TP & White </li>
+                <li>Volume:1 Oz / 2 Oz / 3 Oz </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Product 31 Details Container -->
+    <div id="product31" class="product">
+        <img src="IMAGES/Neww/Neww/sipperglass.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Sipper Glasses Disposable</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Round</li>
+                <li>Color: Black,TP & White </li>
+                <li>Volume:300/500 ML </li>
+                <li>Packagings: 1000 Nos</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Product 32 Details Container -->
+    <div id="product32" class="product">
+        <img src="IMAGES/Neww/Neww/bowlsround.jpeg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Bowls Round Plastic Containers</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Round</li>
+                <li>Color: Black,TP & White </li>
+                <li>Volume:650/750/1050ML </li>
+                <li>Packagings: 400/500 Nos</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Product 33 Details Container -->
+    <div id="product33" class="product">
+        <img src="IMAGES/Neww/sweetbox.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Sweet Box Plastic Containers</h2>
+            <div class="product-tag22">Kitchen and Storage Containers</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Square/Rectangle</li>
+                <li>Color: Black,TP & White </li>
+                <li>Volume:350/500/1000 grams </li>
+                <li>Packagings: 1000/800/650 Nos</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ===========product3.html==== -->
+
+    <!-- Product 34 Details Container -->
+    <div id="product34" class="product">
+        <img src="IMAGES/Neww/bagasebowl.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Bio-Degradable /Sugarcane Bagasse Round Bowls</h2>
+            <div class="product-tag22">Bio-Degradable</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Round</li>
+                <li>Color: Brown </li>
+                <li>Volume:120/180/240/350 ML </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Product 35 Details Container -->
+    <div id="product35" class="product">
+        <img src="IMAGES/Neww/Neww/bagasecup.jpg" alt="Product 2 Image">
+        <div class="product-details">
+            <h2>Bio-Degradable/Sugarcane Bagasse Cups</h2>
+            <div class="product-tag22">Bio-Degradable</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Round</li>
+                <li>Color: Brown </li>
+                <li>Volume:100/150 ML </li>
+                <li>Packagings:2000 Nos</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 36 Details Container -->
+    <div id="product36" class="product">
+        <img src="IMAGES/Neww/Neww/bagaseplate.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Bio-Degradable/Sugarcane Bagasse Plates</h2>
+            <div class="product-tag22">Bio-Degradable</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Round</li>
+                <li>Color: Brown </li>
+                <li>Size: 6"/7"/8"/10" (Inches) </li>
+                <li>Packagings:2000/1200/400 Nos</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 37 Details Container -->
+    <div id="product37" class="product">
+        <img src="IMAGES/Neww/Neww/bagasebowl2.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Bio-Degradable/Sugarcane Bagasse Bowls</h2>
+            <div class="product-tag22">Bio-Degradable</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Square</li>
+                <li>Color: Brown </li>
+                <li>Volume:110/150/340 ML </li>
+                <li>Packagings:450/1500/2000 Nos</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 38 Details Container -->
+    <div id="product38" class="product">
+        <img src="IMAGES/Neww/Neww/sgrcanebgsemealtry.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Bio-Degradable/Sugarcane Bagasse Meal Tray</h2>
+            <div class="product-tag22">Bio-Degradable</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Square</li>
+                <li>Color: Brown </li>
+                <li>Sizes: 2-Compartment/3-Compartment </li>
+                <li>9"/ 6" (Inches)</li>
+                <li>Packagings:500/650/1000 Nos</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 39 Details Container -->
+    <div id="product39" class="product">
+        <img src="IMAGES/Neww/cofeestirer.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Disposable Wood Coffee Stirrer</h2>
+            <div class="product-tag22">Wooden</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Color: Brown </li>
+                <li>Size: 110/140 mm </li>
+                <li>Pieces Per Packet: 450/500/1000</li>
+                <li>Packagings:100 Packet</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 40 Details Container -->
+    <div id="product40" class="product">
+        <img src="IMAGES/Neww/fruitskewers.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Disposable Wood Fruit Skewers</h2>
+            <div class="product-tag22">Wooden</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Color: Brown </li>
+                <li>Size: 3.5 inches </li>
+                <li>Pieces Per Packet:100</li>
+                <li>Packagings:100 Packet</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 41 Details Container -->
+    <div id="product41" class="product">
+        <img src="IMAGES/Neww/icecreamspoon.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Disposable Wood IceCream Spoons</h2>
+            <div class="product-tag22">Wooden</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Color: Brown </li>
+                <li>Size: 9 cm </li>
+                <li>Pieces Per Packet:500/1000</li>
+                <li>Packagings:100 Packet</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 42 Details Container -->
+    <div id="product42" class="product">
+        <img src="IMAGES/Neww/icecreamstick.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Disposable Wood IceCream Sticks</h2>
+            <div class="product-tag22">Wooden</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Color: Brown </li>
+                <li>Size: </li>
+                <li>Pieces Per Packet: 200/1000</li>
+                <li>Packagings:100 Packet</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 43 Details Container -->
+    <div id="product43" class="product">
+        <img src="IMAGES/Neww/knifewodd.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Disposable Wood Knife</h2>
+            <div class="product-tag22">Wooden Cutlery</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Color: Brown </li>
+                <li>Size: 110/140/160 mm </li>
+                <li>Packagings:100 Packet</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 44 Details Container -->
+    <div id="product44" class="product">
+        <img src="IMAGES/Neww/knottedskewrs.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Disposable Bamboo KnottedSkewers</h2>
+            <div class="product-tag22">Wooden</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Color: Brown </li>
+                <li>Size:knott-4",knott-5",knott-6" </li>
+                <li>Pieces Per Packet:100</li>
+                <li>Packagings:100 Packet</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 45 Details Container -->
+    <div id="product45" class="product">
+        <img src="IMAGES/Neww/spoon wodd.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Disposable Wood Spoon</h2>
+            <div class="product-tag22">Wooden Cutlery</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Color: Brown </li>
+                <li>Size: 110/140/160 mm </li>
+                <li>Packagings:100 Packet</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 46 Details Container -->
+    <div id="product46" class="product">
+        <img src="IMAGES/Neww/knifewodd.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Disposable Wood Teppo Skewers</h2>
+            <div class="product-tag22">Wooden
+
+            </div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Color: Brown </li>
+                <li>Size: 6 inches</li>
+                <li>Packagings:100 Pack</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 47 Details Container -->
+    <div id="product47" class="product">
+        <img src="IMAGES/Neww/toothpicks.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Disposable Wood Toothpicks</h2>
+            <div class="product-tag22">Wooden </div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Size: Taj-65mm/ China-65mm </li>
+                <li>Per Box:10 Nos X 200 Sticks / 1,000 Sticks</li>
+                <li>Packagings:100 Box / 20 Box</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 48 Details Container -->
+    <div id="product48" class="product">
+        <img src="IMAGES/Neww/wooden-icecreamspoon.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Disposable Wood Large IceCream Spoons</h2>
+            <div class="product-tag22">Wooden</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Color: Brown </li>
+                <li>Size:Large </li>
+                <li>Pieces Per Packet: 100</li>
+                <li>Packagings:100 Packet</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 49 Details Container -->
+    <div id="product49" class="product">
+        <img src="IMAGES/Neww/wooden-spoon.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Disposable Wood Forks</h2>
+            <div class="product-tag22">Wooden Cutlery</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Color: Brown </li>
+                <li>Size: 110/140/160 mm </li>
+                <li>Packagings:100 Packet</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 50 Details Container -->
+    <div id="product50" class="product">
+        <img src="IMAGES/Neww/sugarcane bagasse plates.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Bio-Degradable/Sugarcane Bagasse Meal Plates</h2>
+            <div class="product-tag22">Bio-Degradable</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Round</li>
+                <li>Color: Brown </li>
+                <li> Sizes:6"/ 7"/ 8"/ 10"/ 15" (Inches)</li>
+                <li>Packagings:500/650/1000/1200 Nos</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- ====Page 4===== -->
+    <!-- Product 51 Details Container -->
+    <div id="product51" class="product">
+        <img src="IMAGES/Neww/disposableplate.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Meal Tray </h2>
+            <div class="product-tag22">Disposable</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Round</li>
+                <li>Color: White</li>
+                <li>Type:2-Compartment/3-Compartment/4-Compartment</li>
+                <li> Sizes:6"/ 7"/ 8"/ 10"/ 15" (Inches)</li>
+                <li>Packagings:500/650/1000/1200 Nos</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Product 52 Details Container -->
+    <div id="product52" class="product">
+        <img src="IMAGES/Neww/Neww/disposableplate2.jpg" alt="Product 2 Image">
+        <div class="product-details">
+            <h2>Meal Plate</h2>
+            <div class="product-tag22">Disposable</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Shape: Round</li>
+                <li>Color: White </li>
+                <li> Sizes:6"/ 7"/ 8"/ 10"/ 15" (Inches)</li>
+                <li>Packagings:500/650/1000/1200 Nos</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 53 Details Container -->
+    <div id="product53" class="product">
+        <img src="IMAGES/Neww/Neww/papercupdr.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Single PE Paper Cups</h2>
+            <div class="product-tag22">Paper Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Size: Small/Medium/Large</li>
+                <li>Color:Plain/Spectra Printed </li>
+                <li>Packagings:1000/2000/3000 Nos</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 54 Details Container -->
+    <div id="product54" class="product">
+        <img src="IMAGES/Neww/Neww/mini papercups.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2> Ice Cream Paper Cups</h2>
+            <div class="product-tag22">Paper Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Size: Small/Medium/Large</li>
+                <li>Color:Solid/Dotted/Printed Cups </li>
+                <li>Packagings:2000/3000/4000 Nos</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 55 Details Container -->
+    <div id="product55" class="product">
+        <img src="IMAGES/Neww/Neww/paperboxes.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Pizza Boxes</h2>
+            <div class="product-tag22">CardBoard Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Size: Small/Medium/Large</li>
+                <li>Color:White & BrownKraft </li>
+                <li>Packagings:2000/3000/4000 Nos</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 56 Details Container -->
+    <div id="product56" class="product">
+        <img src="IMAGES/Neww/Neww/paperbags.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Paper Cover Bags</h2>
+            <div class="product-tag22">Paper Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Size: Small/Medium/Large</li>
+                <li>Color:White & BrownKraft </li>
+                <li>Packagings:2000/3000/4000 Nos</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 57 Details Container -->
+    <div id="product57" class="product">
+        <img src="IMAGES/Neww/Neww/papercarrybag.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Paper Bags</h2>
+            <div class="product-tag22">Paper Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Size: Small/Medium/Large</li>
+                <li>Color:White & BrownKraft </li>
+                <li>Packagings:2000/3000/4000 Nos</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 58 Details Container -->
+    <div id="product58" class="product">
+        <img src="IMAGES/paperbagsrestaurnt.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Restaurant Paper Bags</h2>
+            <div class="product-tag22">Paper Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Size: Small/Medium/Large</li>
+                <li>Color:White & BrownKraft </li>
+                <li>Packagings:2000/3000/4000 Nos</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 59 Details Container -->
+    <div id="product59" class="product">
+        <img src="IMAGES/sweetbags.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Sweet Paper Bags</h2>
+            <div class="product-tag22">Paper Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Size: Small/Medium/Large</li>
+                <li>Color:White & BrownKraft </li>
+                <li>Packagings:2000/3000/4000 Nos</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 60 Details Container -->
+    <div id="product60" class="product">
+        <img src="IMAGES/bakerybags.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Bakery Paper Bags</h2>
+            <div class="product-tag22">Paper Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Size: Small/Medium/Large</li>
+                <li>Color:White & BrownKraft </li>
+                <li>Packagings:2000/3000/4000 Nos</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 61 Details Container -->
+    <div id="product61" class="product">
+        <img src="IMAGES/papercovers.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Paper Covers</h2>
+            <div class="product-tag22">Paper Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Color:Brown</li>
+                <li>Size:25X40 cm</li>
+                <li>Material: Paper </li>
+                <li>Quantity per packet: 100</li>
+                <li>Packagings:1000 Nos</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 62 Details Container -->
+    <div id="product62" class="product">
+        <img src="IMAGES/tamperevident1.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Tamper Evident Covers</h2>
+            <div class="product-tag22">Paper Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Color: Brown</li>
+                <li>Size:18X14</li>
+                <li>Material: Paper </li>
+                <li>Quantity per packet: 100</li>
+                <li>Packaging: 1000 Nos</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 63 Details Container -->
+    <div id="product63" class="product">
+        <img src="IMAGES/Neww/Neww/paperstraws.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Paper Straws</h2>
+            <div class="product-tag22">Paper Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li></li>
+                <li>Material: Paper </li>
+                <li>Size: 6/8/10 mm</li>
+                <li>Packagings:5000/6000</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 64 Details Container -->
+    <div id="product64" class="product">
+        <img src="IMAGES/Neww/Neww/tissue car.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Car Tissue</h2>
+            <div class="product-tag22">Paper Soft Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li> Box Tissue 4 X 1</li>
+                <li>Material: Paper </li>
+                <li>Packagings:64/72/104 Nos</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 65 Details Container -->
+    <div id="product65" class="product">
+        <img src="IMAGES/Neww/napkins.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Napkins Disposable</h2>
+            <div class="product-tag22">Paper Soft Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Size: 24X24 cm</li>
+                <li>Material: Paper </li>
+                <li>Packagings:100 Nos</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 66 Details Container -->
+    <div id="product66" class="product">
+        <img src="IMAGES/Neww/Neww/cupcakecups.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Cup Cake Cups</h2>
+            <div class="product-tag22">Paper Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li> Size(LXWXH): 50X30X30 </li>
+                <li>Material: Paper </li>
+                <li>Pieces:100 Per packet</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 67 Details Container -->
+    <div id="product67" class="product">
+        <img src="IMAGES/Neww/primiertissue.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Premier Car Tissue</h2>
+            <div class="product-tag22">Paper Soft Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Premier Box Tissue 4 X 1</li>
+                <li>Material: Paper </li>
+                <li>Packagings:64/72/104 Nos</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 68 Details Container -->
+    <div id="product68" class="product">
+        <img src="IMAGES/Neww/Neww/foodwrap.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Food Wrap</h2>
+            <div class="product-tag22">Paper Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Length : 9 Mtr</li>
+                <li>Material: Paper </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Product 69 Details Container -->
+    <div id="product69" class="product">
+        <img src="IMAGES/Neww/paperroll.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Premium Paper Rolls</h2>
+            <div class="product-tag22">Paper Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Material: Paper </li>
+                <li>Size: 100/200/300 Mtr</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Product 70 Details Container -->
+    <div id="product70" class="product">
+        <img src="IMAGES/Neww/kitchen towels.png" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Kitchen Paper Rolls </h2>
+            <div class="product-tag22">Paper Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Ply: 2ply</li>
+                <li>Material: Paper </li>
+                <li>Packagings:100 Nos</li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- Product 71 Details Container -->
+    <div id="product71" class="product">
+        <img src="IMAGES/toiletpaperrolls - Copy.jpg" alt="Product 2 Image">
+        <div class="product-details">
+            <h2>Toilet Paper Rolls </h2>
+            <div class="product-tag22">Paper Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Ply: 3ply</li>
+                <li>Material: Paper </li>
+                <li>Packagings:100 Nos</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 72 Details Container -->
+    <div id="product72" class="product">
+        <img src="IMAGES/Neww/rippedcup.png" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Ripple Double Wall Cups </h2>
+            <div class="product-tag22">Paper Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Sizes:130/150/170/200/250-500 ML</li>
+                <li>Volume in ML:130/150/170/200/250-500 ML </li>
+                <li>Packagings:1000 Nos</li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- ================page 5========= -->
+    <!-- Product 73 Details Container -->
+    <div id="product73" class="product">
+        <img src="IMAGES/blackmask copy.png" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Black Masks</h2>
+            <div class="product-tag22">Disposable</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Color: Black</li>
+                <li>Size: Free Size</li>
+                <li>Material: Non-Woven Fabric</li>
+                <li>Ply: 3 ply</li>
+                <li>Packagings:100</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 74 Details Container -->
+    <div id="product74" class="product">
+        <img src="IMAGES/Neww/Neww/bofmantcap.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Bouffant Caps</h2>
+            <div class="product-tag22">Disposable</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Color: BLue</li>
+                <li>Size: Free Size</li>
+                <li>Material:Non-Woven Fabric </li>
+                <li>Packagings:100</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 75 Details Container -->
+    <div id="product75" class="product">
+        <img src="IMAGES/Neww/Neww/maskblue.png" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Blue Masks</h2>
+            <div class="product-tag22">Disposable</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Color: Blue</li>
+                <li>Size: Free Size</li>
+                <li>Type :Surgical Mask </li>
+                <li>Ply: 3 ply</li>
+                <li>Packagings:100</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 76 Details Container -->
+    <div id="product76" class="product">
+        <img src="IMAGES/Neww/kitchen rolls.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Film Rolls</h2>
+            <div class="product-tag22">Packaging Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Color:Transparent </li>
+                <li>Width:45 cm </li>
+                <li>Roll Length: 548.64 Mtr</li>
+                <li>Material: Stretch Film </li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 77 Details Container -->
+    <div id="product77" class="product">
+        <img src="IMAGES/Neww/Neww/bubblewrap.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Bubble Wrap</h2>
+            <div class="product-tag22">Packaging Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Color: Transparent</li>
+                <li>Roll Length:10-100 Mtr</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 78 Details Container -->
+    <div id="product78" class="product">
+        <img src="IMAGES/Neww/Neww/stripped cups.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Stripped Cups </h2>
+            <div class="product-tag22">Paper Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Sizes:130/150/170/200/250-500 ML</li>
+                <li>Volume in ML:130/150/170/200/250-500 ML </li>
+                <li>Packagings:1000 Nos</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 79 Details Container -->
+    <div id="product79" class="product">
+        <img src="IMAGES/Neww/bopptape.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>BOPP Tapes</h2>
+            <div class="product-tag22">Packaging Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Color: Brown </li>
+                <li>Material: BOPP</li>
+                <li>Width:2.8 inches </li>
+                <li>Roll Length: 25 mtr</li>
+                <li>Packagings:100 Carton</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 80 Details Container -->
+    <div id="product80" class="product">
+        <img src="IMAGES/Neww/tapes.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2> Masking Tapes</h2>
+            <div class="product-tag22">Packaging Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Color: Brown </li>
+                <li>Material: Paper</li>
+                <li>Width:2.8 inches </li>
+                <li>Roll Length: 25 mtr</li>
+                <li>Packagings:100 Carton</li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- Product 81 Details Container -->
+    <div id="product81" class="product">
+        <img src="IMAGES/glassbotlle.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Glass Bottles</h2>
+            <div class="product-tag22">Glass Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Capacity: 250/500/1000 ML</li>
+                <li>Color:Transparent </li>
+                <li>Material:Glass</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Product 82 Details Container -->
+    <div id="product82" class="product">
+        <img src="IMAGES/Neww/glsjar.jpg" alt="Product 1 Image">
+        <div class="product-details">
+            <h2>Glass Jars</h2>
+            <div class="product-tag22">Glass Material</div>
+            <p>★★★★★</p>
+            <ul>
+                <li>Material: Glass</li>
+                <li>Color: Transparent </li>
+                <li>Capacity: 0.2 ltrs</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- ============footer===== -->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>Unique Packaging <span>Solution.</span></h3>
+
+            <p class="footer-links">
+                <a href="index.html" class="link-1">Home</a>
+
+                <a href="product.html">Our Products</a>
+
+                <a href="about.html">About</a>
+
+                <a href="contact.html">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Uniquepackagingindialtd © 2020</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <!-- <i class="fa fa-map-marker"></i> -->
+                <p> No.135/8, 1st Main Road,<br> 4th D Cross, Gandhi
+                    Nagar,<br> Bangalore - 560 009.</p><br>
+            </div><br>
+            <p>Call Us:</p>
+            <div>
+                <i class="fa fa-phone"></i>
+                <!-- <ion-icon name="call-outline" aria-hidden="true"></ion-icon> -->
+                <p> <a href="tel:919945883157" class="contact-link">+91 9945883157</a> <br>
+                    <a href="tel:918073519061" class="contact-link">+91 8073519061</a><br>
+                    <a href="tel:91998668910" class="contact-link">+91 998668910</a><br>
+                    <a href="tel:918660505698" class="contact-link">+91 8660505698</a>
+                </p>
+
+            </div><br>
+
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:Uniquepackagingindialtd@gmail.com" class="link">
+                        Uniquepackagingindialtd@gmail.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company:</span>
+            <p style="font-weight:lighter;color:grey; ">Established in 2020, Unique Packaging Solutions,your trusted
+                wholesaler
+                and manufacturer of eco-friendly products in Bangalore. From sustainable materials
+                to ethical manufacturing, we are committed to providing you with quality goods that
+                leave a positive impact on the planet.</p>
+            </p>
+        </div>
+
+        <!-- <div class="footer-icons">
+    
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+    
+        </div> -->
+
+
+
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the product ID from the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('product');
+
+            // Show the corresponding product details container
+            if (productId) {
+                const selectedProduct = document.getElementById(productId);
+                if (selectedProduct) {
+                    selectedProduct.style.display = 'block';
+                }
+            }
+        });
+
+
+        function goBack() {
+            window.history.back();
+        }
+
+    </script>
+
+    <script src="script.js"></script>
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/393ff6bdca.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

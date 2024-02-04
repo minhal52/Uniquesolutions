@@ -11,6 +11,18 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
 </head>
+<style>
+#View-details{
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: black;
+}
+#View-details a{
+    text-decoration: none;
+    color: white;
+}
+
+</style>
 
 <body>
   <header>
@@ -29,9 +41,7 @@
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <div class="dropdown">
-      <button class="dropbtn" class="border">All Products
-        <!-- <i class="fa fa-caret-down"></i> -->
-      </button>
+      <a href="product.html">All Products</a>
       <div class="dropdown-content">
         <a href="product.html">Aluminium Containers</a>
         <a href="product-3.html">Sugarcane Bagasse Products</a>
@@ -70,28 +80,27 @@
     <div id="product-list-container">
       <div id="product-list">
 
-        <!-- Product 1 -->
-        <div class="product-container">
-          <img class="product-image" src="IMAGES/Neww/alu-rect-container.jpg" alt="Product 1">
-          <div class="product-details">
-            <h3>250ml Railway container</h3>
-            <h5>Aluminium</h5>
-            <p>Kitchen Storage & Containers</p>
-            <button class="buy-button"><a
-                href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product" target="_blank">Buy
-                Now</a></button>
-
-
-          </div>
-        </div>
+       <!-- Product 1 -->
+<div class="product-container">
+    <img class="product-image" src="IMAGES/Neww/alu-rect-container.jpg" alt="Product 1">
+    <div class="product-details">
+      <h3>210ml Container</h3>
+      <h5>Aluminium</h5>
+      <p>Kitchen Storage & Containers</p>
+      <button id="View-details"><a href="p-details.html?product=product1">View Details</a></button>
+      <button class="buy-button"><a href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product" target="_blank">Buy Now</a></button>
+    </div>
+  </div>
+  
 
         <!-- Product 2 -->
         <div class="product-container">
           <img class="product-image" src="IMAGES/Neww/alu23.jpg" alt="Product 2">
           <div class="product-details">
-            <h3> 120ml Container</h3>
+            <h3> 250ml Container</h3>
             <h5>Aluminium</h5>
             <p>Kitchen Storage & Containers</p>
+            <button id="View-details"><a href="p-details.html?product=product2">View Details</a></button>
             <button class="buy-button"><a
                 href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product" target="_blank">Buy
                 Now</a></button>
@@ -103,9 +112,10 @@
         <div class="product-container">
           <img class="product-image" src="IMAGES/Neww/alu24.jpg" alt="Product 3">
           <div class="product-details">
-            <h3>100ml Container</h3>
+            <h3>450ml Container</h3>
             <h5>Aluminium</h5>
             <p>Kitchen Storage & Containers</p>
+            <button id="View-details"><a href="p-details.html?product=product3">View Details</a></button>
             <button class="buy-button"><a
                 href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product" target="_blank">Buy
                 Now</a></button>
@@ -120,6 +130,7 @@
             <h3> Meal plate</h3>
             <h5>Aluminium</h5>
             <p>Kitchen Storage & Containers</p>
+            <button id="View-details"><a href="p-details.html?product=product4">View Details</a></button>
             <button class="buy-button"><a
                 href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product" target="_blank">Buy
                 Now</a></button>
@@ -127,11 +138,12 @@
           </div>
         </div>
         <div class="product-container">
-          <img class="product-image" src="IMAGES/Neww/alusquare.jpg" alt="Product 4">
+          <img class="product-image" src="IMAGES/Neww/alusquare.jpg" alt="Product 5">
           <div class="product-details">
-            <h3>Square Containers</h3>
-            <h5>Aluminium</h5>
+            <h3>120 ML Container</h3>
+            <h5>Aluminium Foil</h5>
             <p>Kitchen Storage & Containers</p>
+            <button id="View-details"><a href="p-details.html?product=product5">View Details</a></button>
             <button class="buy-button"><a
                 href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product" target="_blank">Buy
                 Now</a></button>
@@ -139,11 +151,12 @@
           </div>
         </div>
         <div class="product-container">
-          <img class="product-image" src="IMAGES/Neww/container alu.jpg" alt="Product 4">
+          <img class="product-image" src="IMAGES/Neww/container alu.jpg" alt="Product 6">
           <div class="product-details">
             <h3>100ML Bakery Foil Container</h3>
             <h5>Aluminium</h5>
             <p>Kitchen Storage & Containers</p>
+            <button id="View-details"><a href="p-details.html?product=product6">View Details</a></button>
             <button class="buy-button"><a
                 href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product" target="_blank">Buy
                 Now</a></button>
@@ -151,11 +164,12 @@
           </div>
         </div>
         <div class="product-container">
-          <img class="product-image" src="IMAGES/Neww/alu 22.jpg" alt="Product 4">
+          <img class="product-image" src="IMAGES/Neww/alu 22.jpg" alt="Product 7">
           <div class="product-details">
             <h3> Oval containers</h3>
             <h5>Aluminium</h5>
             <p>Kitchen Storage & Containers</p>
+            <button id="View-details"><a href="p-details.html?product=product7">View Details</a></button>
             <button class="buy-button"><a
                 href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product" target="_blank">Buy
                 Now</a></button>
@@ -163,11 +177,12 @@
           </div>
         </div>
         <div class="product-container">
-          <img class="product-image" src="IMAGES/Neww/alu-bakery.jpg" alt="Product 4">
+          <img class="product-image" src="IMAGES/Neww/alu-bakery.jpg" alt="Product 8">
           <div class="product-details">
-            <h3>Bakery container</h3>
+            <h3>Bakery Foil Container</h3>
             <h5>Aluminium</h5>
             <p>Kitchen Storage & Containers</p>
+            <button id="View-details"><a href="p-details.html?product=product8">View Details</a></button>
             <button class="buy-button"><a
                 href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product" target="_blank">Buy
                 Now</a></button>
@@ -175,11 +190,12 @@
           </div>
         </div>
         <div class="product-container">
-          <img class="product-image" src="IMAGES/Neww/alu-muffin.jpg" alt="Product 4">
+          <img class="product-image" src="IMAGES/Neww/alu-muffin.jpg" alt="Product 9">
           <div class="product-details">
             <h3>140ml Muffin container</h3>
             <h5>Aluminium</h5>
             <p>Kitchen Storage & Containers</p>
+            <button id="View-details"><a href="p-details.html?product=product9">View Details</a></button>
             <button class="buy-button"><a
                 href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product" target="_blank">Buy
                 Now</a></button>
@@ -187,11 +203,12 @@
           </div>
         </div>
         <div class="product-container">
-          <img class="product-image" src="IMAGES/Neww/alu-oval.jpg" alt="Product 4">
+          <img class="product-image" src="IMAGES/Neww/alu-oval.jpg" alt="Product 10">
           <div class="product-details">
             <h3>120ml bakery container</h3>
             <h5>Aluminium</h5>
             <p>Kitchen Storage & Containers</p>
+            <button id="View-details"><a href="p-details.html?product=product10">View Details</a></button>
             <button class="buy-button"><a
                 href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product" target="_blank">Buy
                 Now</a></button>
@@ -199,11 +216,12 @@
           </div>
         </div>
         <div class="product-container">
-          <img class="product-image" src="IMAGES/Neww/aluminium covers.jpg" alt="Product 4">
+          <img class="product-image" src="IMAGES/Neww/aluminium covers.jpg" alt="Product 11">
           <div class="product-details">
             <h3>Covers</h3>
             <h5>Aluminium</h5>
             <p>Kitchen Storage & Containers</p>
+            <button id="View-details"><a href="p-details.html?product=product11">View Details</a></button>
             <button class="buy-button"><a
                 href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product" target="_blank">Buy
                 Now</a></button>
@@ -211,11 +229,12 @@
           </div>
         </div>
         <div class="product-container">
-          <img class="product-image" src="IMAGES/Neww/Neww/airwaycontainer.png" alt="Product 4">
+          <img class="product-image" src="IMAGES/hmebb44.jpg" alt="Product 12">
           <div class="product-details">
             <h3>Airway container</h3>
             <h5>Aluminium</h5>
             <p>Kitchen Storage & Containers</p>
+            <button id="View-details"><a href="p-details.html?product=product12">View Details</a></button>
             <button class="buy-button"><a
                 href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product" target="_blank">Buy
                 Now</a></button>
@@ -223,11 +242,12 @@
           </div>
         </div>
         <div class="product-container">
-          <img class="product-image" src="IMAGES/Neww/Neww/99container.png" alt="Product 4">
+          <img class="product-image" src="IMAGES/Neww/Neww/99container.png" alt="Product 13">
           <div class="product-details">
             <h3>9*9 container</h3>
             <h5>Aluminium</h5>
             <p>Kitchen Storage & Containers</p>
+            <button id="View-details"><a href="p-details.html?product=product13">View Details</a></button>
             <button class="buy-button"><a
                 href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product" target="_blank">Buy
                 Now</a></button>
@@ -237,11 +257,12 @@
 
 
         <div class="product-container">
-          <img class="product-image" src="IMAGES/Neww/Neww/ddfoil.jpg" alt="Product 4">
+          <img class="product-image" src="IMAGES/Neww/Neww/ddfoil.jpg" alt="Product 14">
           <div class="product-details">
             <h3>Double diamond foil rolls</h3>
             <h5>Aluminium</h5>
             <p>Kitchen Storage & Containers</p>
+            <button id="View-details"><a href="p-details.html?product=product14">View Details</a></button>
             <button class="buy-button"><a
                 href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product" target="_blank">Buy
                 Now</a></button>
@@ -250,11 +271,12 @@
         </div>
 
         <div class="product-container">
-          <img class="product-image" src="IMAGES/Neww/Neww/foilroll.jpg" alt="Product 4">
+          <img class="product-image" src="IMAGES/Neww/Neww/foilroll.jpg" alt="Product 15">
           <div class="product-details">
             <h3>Foil rolls</h3>
             <h5>Aluminium</h5>
             <p>Kitchen Storage & Containers</p>
+            <button id="View-details"><a href="p-details.html?product=product15">View Details</a></button>
             <button class="buy-button"><a
                 href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product" target="_blank">Buy
                 Now</a></button>
@@ -262,11 +284,12 @@
           </div>
         </div>
         <div class="product-container">
-          <img class="product-image" src="IMAGES/Neww/vedica wrap.png" alt="Product 4">
+          <img class="product-image" src="IMAGES/Neww/vedica wrap.png" alt="Product 16">
           <div class="product-details">
             <h3>Vedica foil rolls</h3>
             <h5>Aluminium</h5>
             <p>Kitchen Storage & Containers</p>
+            <button id="View-details"><a href="p-details.html?product=product16">View Details</a></button>
             <button class="buy-button"><a
                 href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product" target="_blank">Buy
                 Now</a></button>
@@ -274,10 +297,11 @@
           </div>
         </div>
         <div class="product-container">
-          <img class="product-image" src="IMAGES/Neww/precutsheet.jpeg" alt="Product 4">
+          <img class="product-image" src="IMAGES/Neww/precutsheet.jpeg" alt="Product 17">
           <div class="product-details">
             <h3>Pre cut sheets</h3>
             <p>Aluminium</p>
+            <button id="View-details"><a href="p-details.html?product=product17">View Details</a></button>
             <button class="buy-button"><a href="https://wa.me/9945883157?text=Hello%20I%20want%20to%20buy%20your%20product"
                 target="_blank">Buy Now</a></button>
     
@@ -354,16 +378,6 @@
         leave a positive impact on the planet.</p>
       </p>
     </div>
-
-    <!-- <div class="footer-icons">
-  
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="#"><i class="fa fa-github"></i></a>
-  
-      </div> -->
-
 
 
   </footer>
