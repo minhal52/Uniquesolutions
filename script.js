@@ -116,36 +116,6 @@ function selectInput(list) {
   resultBox.innerHTML = "";
 }
 
-// Search for products
-function performSearch() {
-    var searchInput = document.getElementById('searchInput').value.toLowerCase();
-    var productContainers = document.querySelectorAll('.product-container');
-  
-    productContainers.forEach(function (container) {
-      var productName = container.querySelector('.product-details h3').innerText.toLowerCase();
-      if (productName.includes(searchInput)) {
-        container.style.display = 'block';
-      } else {
-        container.style.display = 'none';
-      }
-    });
-  }
-
-// Search for products
-function indexSearch() {
-    var searchInput = document.getElementById('searchInput').value.toLowerCase();
-    var productContainers = document.querySelectorAll('.best-seller .best-p1');
-  
-    productContainers.forEach(function (container) {
-      var productName = container.querySelector('.best-p1-txt p').innerText.toLowerCase();
-      if (productName.includes(searchInput)) {
-        container.style.display = 'block';
-      } else {
-        container.style.display = 'none';
-      }
-    });
-  }
-  
 
 
 // home sliding bar script

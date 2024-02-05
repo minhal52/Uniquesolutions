@@ -1007,19 +1007,6 @@ nav {
   }
 
 }
-<<<<<<< HEAD
-
-/* this for search functionality */
-.product-container[style*="none"] {
-  display: none !important;
-  opacity: 0.5; 
-}
-
-.best-seller .best-p1[style*="none"] {
-  display: none !important;
-  opacity: 0.5; 
-}
-=======
 /* Home Banner sliding images and text content */
 .home {
   min-height: 360px;
@@ -1567,4 +1554,3 @@ padding:15px;
     right: 10px; 
   }
 }
->>>>>>> 810d2bd351e15edc2e22c98e811c4847b3e6dcbf
