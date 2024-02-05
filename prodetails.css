@@ -11,7 +11,7 @@ body {
         padding: 10px;
         text-align: center;
         display: flex;
-        height: auto;
+        height: 90px;
         /* justify-content: space-between; */
         align-items: center;
       }
@@ -28,6 +28,7 @@ body {
         background-color:#A3672B;
         /* overflow: hidden; */
         text-align: center;
+        height: auto;
       }
       a{
         text-decoration: none;
@@ -39,6 +40,10 @@ body {
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
+      }
+      nav a:hover {
+        border: 1.5px solid white;
+        padding: 16px 14px;
       }
       
       /* Search bar styles */
@@ -233,6 +238,7 @@ body {
         }
         nav a {
           display: block;
+          height: auto;
         }
       
         .mobile-menu {
@@ -248,6 +254,11 @@ body {
           height:60px;
           border-radius: 50px;
         }
+        .icons1 i {
+          font-size: 2px;
+          align-items: center;
+          display: none;
+        }
       }
       @media screen and (max-width: 767px) {
         .dropdown-content {
@@ -260,51 +271,7 @@ body {
       
  
 
-/* 
-      .product-container {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 800px;
-        margin: 0 auto;
-        border: 1px solid #ccc;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        border-radius: 25px;
-    }
 
-    .product-image {
-        flex: 1;
-        max-width: 400px; 
-        margin: auto; 
-        overflow: hidden;
-        position: relative; 
-        border-radius: 20px;
-    }
-
-    .product-image img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .circle-text {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        background-color: #3498db;
-        color: #fff;
-        border-radius: 50%;
-        padding: 5px;
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .pro-details {
-        flex: 1;
-        padding: 20px;
-        border-radius: 50px;
-       
-    } */
 
     table {
       width: 80%;

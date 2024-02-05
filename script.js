@@ -174,3 +174,19 @@ $(document).ready(function() {
 
 
 
+// view detail -product display
+document.addEventListener('DOMContentLoaded', function () {
+  // Get the product ID from the URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const productId = urlParams.get('product');
+
+  // Show the corresponding product details container
+  if (productId) {
+      const selectedProduct = document.getElementById(productId);
+      if (selectedProduct) {
+          selectedProduct.style.display = 'block';
+      }
+  }
+});
+
+
