@@ -410,14 +410,14 @@ nav {
 .pagination a:hover:not(.active) {
   background-color: #ddd;
 }
-
- /* product page */
-  
+/* ==================================================== */
+ /* ===================product page========================== */
+  /* ================================================== */
  #product-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 60px; 
+  /* margin-top: 60px;  */
 }
 
 .product-container {
@@ -428,6 +428,7 @@ nav {
   width: calc(33.333% - 40px);
   max-width: 300px;
   transition: all .6s ease-in-out;
+  
 }
 
 .product-container:hover {
@@ -443,34 +444,87 @@ nav {
 
 .product-details {
   padding: 15px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  
+}
+.product-details h3{
+  font-size: 22px;
+}
+
+/* ===========buy-button/View details Button======= */
+.buy-button,
+#View-details {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    margin: 6px;
+    gap: 2px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+    
 }
 
 .buy-button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin: 6px;
-  background-color:lightblue;
+  border: 1px solid black;
+  background-color: lightskyblue;
   color: black;
-  text-align: center;
-  text-decoration: none;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all .6s ease-in-out;
+  transition: none;
 }
-.buy-button a{
-  color:black;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 20px;
-  transition: all .6s ease-in-out;
+
+.buy-button a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 .buy-button:hover {
-  background-color:lightskyblue;
+    background-color:black;
+    color:white;
+    transition: none;
+}
+
+
+#View-details:hover{
+  background-color:black;
+  color: white;
   transition: none;
 }
+
+.buy-button a:hover {
+
+  color: white;
+  transition: none;
+}
+#View-details a:hover{
+
+  color:white;
+  transition: none;
+}
+
+#View-details {
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: lightskyblue;
+
+}
+
+#View-details a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
 
 @media (max-width: 1024px) {
   .product-container {
@@ -494,7 +548,7 @@ nav {
   }
 
   #product-list {
-    margin-top: 60px;
+    margin-top: 20px;
   }
 }
 
