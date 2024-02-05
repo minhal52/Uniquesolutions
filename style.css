@@ -10,6 +10,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 html, body{
   font-family: 'Poppins', sans-serif;
@@ -358,7 +359,10 @@ nav {
 }
 
 /* Media query for responsive design */
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
+  body{
+    background-attachment: fixed;
+  }
   nav {
     display: none;
     flex-direction: column;
@@ -383,7 +387,67 @@ nav {
   .search-bar {
     max-width: 100%;
   }
+} */
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-attachment: fixed;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+  }
+
+  .nav-show {
+    display: flex !important;
+  }
+
+  .search-box {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .search-box input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  nav a {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .search-bar {
+    max-width: 100%;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+
+  .social-media a {
+    margin: 0 10px;
+  }
+
+  .logo{
+    width: 60px;
+    height: auto;
+  }
 }
+
+
+
+
 
 /* Pagination links */
 .pagination {
