@@ -4,33 +4,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofGJYqcSlzK6UZBQHjJSKkD5I02P1i1uJT" crossorigin="anonymous">
+  <title>Unique Packaging Solution</title>
+  <link rel="icon" type="image/jpg" href="IMAGES/logo-removebg big.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap"
+    rel="stylesheet">
+
+  <!-- carosel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css"
+    integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <header>
+<<<<<<< HEAD
     <img src="IMAGES/logo.jpg" alt="Logo" class="logo">
 
     <div class="search-bar">
       <input type="text" class="search-input" id="searchInput" placeholder="Search..." oninput="indexSearch()">
       <button class="search-button">Search</button>
+=======
+    <a href="#"><img src="IMAGES/logo-nobg.png" alt="Logo" class="logo"></a>
+    <div class="search-box">
+      <div class="row">
+        <input type="text" id="input-box" placeholder="Search anything..." autocomplete="off">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        
+      </div>
+     
+      <div class="result-box"></div>
+>>>>>>> 810d2bd351e15edc2e22c98e811c4847b3e6dcbf
     </div>
 
     <div class="mobile-menu" onclick="toggleMobileMenu()">☰</div>
+    <div class="icons1">
+      <button><i class="fa-brands fa-facebook"></i></button>
+      <button><i class="fa-brands fa-instagram"></i></button>
+      <button><i class="fa-brands fa-youtube"></i></button>
+    </div>
   </header>
 
-  <nav>
+  <nav class="border">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
-    <a href="product.html">Our Products</a>
-
     <div class="dropdown">
-      <button class="dropbtn">All raw materials
-        <i class="fa fa-caret-down"></i>
+     <a href="product.html">All Products</a>
+        <!-- <i class="fa fa-caret-down"></i> -->
+      <div class="dropdown-content">
+        <a href="product.html">Aluminium Containers</a>
+        <a href="product-3.html">Sugarcane Bagasse Products</a>
+        <a href="product-4.html">Disposable products</a>
+        <a href="product-2.html">Takeaways</a>
+        <a href="product-3.html">Skewers</a>
+        <a href="product-4.html">Icecream Cups</a>
+        <a href="product-4.html">Paperbags</a>
+      </div>
+    </div>
+    <div class="dropdown" class="border">
+      <button class="dropbtn">All Raw Materials
+        <!-- <i class="fa fa-caret-down"></i> -->
       </button>
       <div class="dropdown-content">
         <a href="product.html">Aluminium Containers</a>
@@ -39,7 +79,7 @@
         <a href="product-2.html">Takeaways</a>
         <a href="product-3.html">Skewers</a>
         <a href="product-4.html">Icecream Cups</a>
-        <a href="product-4.html">paperbags</a>
+        <a href="product-4.html">Paperbags</a>
       </div>
     </div>
     <a href="contact.html">Contact us</a>
@@ -50,61 +90,202 @@
   <!--  -->
 
   <main>
-    <!-- home -->
-    <div class="banner">
-      <img src="IMAGES/Neww/Neww/homebanner.jpg" alt="Banner Image">
-      <div class="text-content">
-
-        <h1 style="color: black;">
-          <span class="span">Best Quality</span> Food Packaging Material
-        </h1>
-
-
-        <h3 class="home-text" style="color: black; ">"Wrap your goodness in green: <br>
-          Join the Organic Food Packaging <br>
-          Revolution for a planet-friendly feast!"</h3><br>
-
-        <p><a href="product.html">Shop Now</a></p>
-
-      </div>
-    </div>
-
-    <section id="collection">
-      <div class="collections container1">
-        <div class="content">
-          <img src="IMAGES/Neww/foilroll.jpg" alt="img" />
-          <div class="img-content">
-            <p>Alluminium Foil Rolls</p>
-            <button><a href="product.html">SHOP NOW</a></button>
+    <!-- home  banner /sliding images-->
+    <section class="section home has-bg-image" id="home">
+      <div class="container">
+        <!-- Image Slider -->
+        <div class="slide-container">
+          <div class="flex">
+            <!-- image slider content goes here -->
+            <div class="slide fade">
+              <img  src='IMAGES/sliderimg6.jpg' alt=''>
+            </div>
+            <div class="slide fade">
+              <img src='IMAGES/sliderimg2.jpg' alt=''>
+            </div>
+            <div class="slide fade">
+              <img src='IMAGES/sliderimg5.jpg' alt=''>
+            </div>
+            <div class="slide fade">
+              <img src='IMAGES/sliderimg1.jpg' alt=''>
+            </div>
+            <div class="slide fade">
+              <img src='IMAGES/sliderimg3.jpg' alt=''>
+            </div>
+            <div class="slide fade">
+              <img  src='IMAGES/sliderimg4.jpg' alt=''>
+            </div>
+            <a href="#" class="prev" title="Previous" onclick="plusSlides(-1)">&#10094;</a>
+            <a href="#" class="next" title="Next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <div>
+            <div class="dots-container">
+              <span class="dot" onclick="currentSlide(0)"></span>
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
           </div>
         </div>
-        <div class="content2">
-          <img src="IMAGES/Neww/homepage.jpg" alt="img" />
-          <div class="img-content2">
-            <p>Sugarcane Bagasse Products</p>
-            <button><a href="product-3.html">SHOP NOW</a></button>
-          </div>
-        </div>
-        <div class="content3">
-          <img src="IMAGES/Neww/wooden-icecreamspoon.jpg" alt="img" />
-          <div class="img-content3">
-            <p>Ice Cream Spoons</p>
-            <button><a href="product-3.html">SHOP NOW</a></button>
-          </div>
+
+
+        <!-- Text Content -->
+        <div class="text-content">
+          <h4>
+            Best Quality Food Packaging Material.
+          </h4>
+          <h1 class="home-text" style="color: black; width: auto; font-weight: bolder;">Wrap your goodness in green!</h1>
+            <p>Join the Organic Food
+              Packaging <br> Revolution for a planet-friendly feast.</p>
+              <br>
+          <a href="product.html" class="shopnow-btn">Shop Now</a>
         </div>
       </div>
     </section>
+    <!-- ===================Cta/featurebox====== -->
+    <div class="feature-section">
+      <div class="feature-box">
+        <i class="fa-regular fa-comments"></i>
+        <div>
+          <h4>Quick Assistance</h4>
+          <p>Available 24*7</p>
+        </div>
+      </div>
+      <div class="feature-box">
+        <i class="fa-regular fa-address-book"></i>
+        <div>
+          <h4>Certified Organic</h4>
+          <p>All items food-grade certified</p>
+        </div>
+      </div>
+      <div class="feature-box">
+        <i class="fa-brands fa-free-code-camp"></i>
+        <div>
+          <h4>Certified</h4>
+          <p>Micro-Oven Friendly</p>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <!--========== carousel============== -->
+    <section class="product-slider">
+      <div class="slider-heading">
+        <h3> Best Selling Products:</h3>
+      </div> <br>
+      <ul id="autoWidth" class="cs-hidden">
+        <!-- 1 -->
+        <li class="item-a">
+          <!-- product box -->
+          <div class="product-box">
+            <img src="IMAGES/Neww/alu-rect-container.jpg" alt="">
+            <div class="img-content">
+              <p>Take Aways Aluminium</p>
+              <button ><a href="p-details.html?product=product1">VIEW DETAILS</a></button>
+          
+            </div>
+          </div>
+        </li>
+        <!-- 2 -->
+        <li class="item-a">
+          <!-- product box -->
+          <div class="product-box">
+            <img src="IMAGES/Neww/sugarcane bagasse plates.jpg" alt="">
+            <div class="img-content">
+              <p>Sugarcane Bagasse Plates</p>
+            
+              <button ><a href="p-details.html?product=product50">VIEW DETAILS</a></button>
+            </div>
+          </div>
+        </li>
+
+
+        <!-- 3-->
+        <li class="item-a">
+          <div class="product-box">
+            <img src="IMAGES/paperbagsrestaurnt.jpg" alt="1234">
+            <div class="img-content">
+              <p>Restaurant Paper Bags</p>
+              <button ><a href="p-details.html?product=product58">VIEW DETAILS</a></button>
+            </div>
+          </div>
+
+        </li>
+        <!-- 4 -->
+        <li class="item-a">
+          <!-- product box -->
+          <div class="product-box">
+            <img src="IMAGES/Neww/mealtray11.jpg" alt="1234">
+            <div class="img-content">
+              <p>Meal Tray</p>
+              <button ><a href="p-details.html?product=product19">VIEW DETAILS</a></button>
+            </div>
+          </div>
+        </li>
+        <!-- 5 -->
+        <li class="item-a">
+          <!-- product box -->
+          <div class="product-box">
+            <img src="IMAGES/Neww/paperstraws.jpg" alt="1234">
+            <div class="img-content">
+              <p>Paper Straws</p>
+              <button ><a href="p-details.html?product=product63">VIEW DETAILS</a></button>
+            </div>
+          </div>
+        </li>
+
+
+        <!-- 6-->
+        <li class="item-a">
+          <!-- product box -->
+          <div class="product-box">
+            <img src="IMAGES/Neww/primiertissue.jpg" alt="1234">
+            <div class="img-content">
+              <p>Car Tissue</p>
+              <button ><a href="p-details.html?product=product67">VIEW DETAILS</a></button>
+            </div>
+          </div>
+        </li>
+        <!-- 7-->
+        <li class="item-a">
+          <!-- product box -->
+          <div class="product-box">
+            <img src="IMAGES/Neww/Neww/stripped cups.jpg" alt="1234">
+            <div class="img-content">
+              <p>Ripple Double Wall</p>
+              <button ><a href="p-details.html?product=product72">VIEW DETAILS</a></button>
+            </div>
+          </div>
+        </li> <!-- 8 -->
+        <li class="item-a">
+          <!-- product box -->
+          <div class="product-box">
+            <img src="IMAGES/sweetbags.jpg">
+            <div class="img-content">
+              <p>Sweet Paper Bags</p>
+              <button ><a href="p-details.html?product=product59">VIEW DETAILS</a></button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+
+
 
     <!-- about section -->
-    <div class="heading">
-      <h1>About us</h1>
-    </div>
-    <div class="container">
+     <section style="padding-top: 50px;">
+    <div class="container11">
       <section class="about">
         <div class="about-image">
           <img src="IMAGES/logo.jpg" alt="about">
         </div>
         <div class="about-content">
+          <div class="heading">
+            <h1>About us</h1>
+          </div>
           <p>At Unique Packaging Solutions, we stand as a beacon of change, offering
             a wide array of sustainable and biodegradable packaging solutions.
             As manufacturers, we bring precision and expertise to every product, ensuring that each piece not only
@@ -115,13 +296,14 @@
         </div>
       </section>
     </div>
-
+  </section>
     </div>
     <div class="seller">
       <h2 style="text-align: center;">Featured <span>Products:</span></h2>
       <div class="best-seller">
         <div class="best-p1">
           <img src="IMAGES/Neww/Neww/paperboxes.jpg" alt="img">
+          <p>Pizza Boxes</p>
           <div class="best-p1-txt">
             <div class="name-of-p">
               <div class="buy-now">
@@ -132,15 +314,17 @@
         </div>
         <div class="best-p1">
           <img src="IMAGES/Neww/tepposkewes.jpg" alt="img">
+          <p>Skewers</p>
           <div class="best-p1-txt">
 
             <div class="buy-now">
               <button><a href="product-3.html">View More</a></button>
-            </div>
+         </div>
           </div>
         </div>
         <div class="best-p1">
           <img src="IMAGES/Neww/stripped cups.jpg" alt="img">
+          <p>Disposable Cups</p>
           <div class="best-p1-txt">
 
             <div class="buy-now">
@@ -149,7 +333,8 @@
           </div>
         </div>
         <div class="best-p1">
-          <img src="IMAGES/Neww/tissue car.jpg" alt="img">
+          <img src="IMAGES/glassbotlle.jpg" alt="img">
+          <p>Glass Bottles</p>
           <div class="best-p1-txt">
             <div class="buy-now">
               <button><a href="product-4.html">View More</a></button>
@@ -160,6 +345,7 @@
     </div>
 
   </main>
+  <!-- =========footer=== -->
   <footer class="footer-distributed">
 
     <div class="footer-left">
@@ -182,7 +368,8 @@
     <div class="footer-center">
 
       <div>
-        <i class="fa fa-map-marker"></i>
+        <i class="fa-solid fa-location-dot"></i>
+        <!-- <i class="fa fa-map-marker"></i> -->
         <p> No.135/8, 1st Main Road,<br> 4th D Cross, Gandhi
           Nagar,<br> Bangalore - 560 009.</p><br>
       </div><br>
@@ -192,15 +379,21 @@
         <!-- <ion-icon name="call-outline" aria-hidden="true"></ion-icon> -->
         <p> <a href="tel:919945883157" class="contact-link">+91 9945883157</a> <br>
           <a href="tel:918073519061" class="contact-link">+91 8073519061</a><br>
+<<<<<<< HEAD
           <a href="tel:91998668910" class="contact-link">+91 998668910</a><br>
+=======
+          <a href="tel:919986689910" class="contact-link">+91 9986689910</a><br>
+>>>>>>> 810d2bd351e15edc2e22c98e811c4847b3e6dcbf
           <a href="tel:918660505698" class="contact-link">+91 8660505698</a>
         </p>
 
       </div><br>
 
+
       <div>
         <i class="fa fa-envelope"></i>
-        <p><a href="mail:Uniquepackagingindialtd@gmail.com" class="link"> Uniquepackagingindialtd@gmail.com</a></p>
+        <p><a href="mailto:Uniquepackagingindialtd@gmail.com" class="link">
+            Uniquepackagingindialtd@gmail.com</a></p>
       </div>
 
     </div>
@@ -230,15 +423,64 @@
 
   </footer>
 
-  <script>
-    function toggleMobileMenu() {
-      var nav = document.querySelector('nav');
-      nav.style.display = nav.style.display === 'none' ? 'flex' : 'none';
-    }
+<<<<<<< HEAD
+=======
+  <!-- script -->
+  <!-- font awesome script -->
+  <script src="https://kit.fontawesome.com/393ff6bdca.js" crossorigin="anonymous"></script>
+  <!-- carosel slider script -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"
+    integrity="sha512-Gfrxsz93rxFuB7KSYlln3wFqBaXUc1jtt3dGCp+2jTb563qYvnUBM/GP2ZUtRC27STN/zUamFtVFAIsRFoT6/w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+  <!-- main script page -->
+  <script src="script.js"></script>
+  <!-- whatsapp icons script -->
+>>>>>>> 810d2bd351e15edc2e22c98e811c4847b3e6dcbf
+  <script>
+    var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?10985';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+      "enabled": true,
+      "chatButtonSetting": {
+        "backgroundColor": "#00e785",
+        "ctaText": "Chat with us",
+        "borderRadius": "25",
+        "marginLeft": "0",
+        "marginRight": "20",
+        "marginBottom": "20",
+        "ctaIconWATI": false,
+        "position": "right"
+      },
+      "brandSetting": {
+        "brandName": "UniquePackagingSolutions",
+        "brandSubTitle": "undefined",
+        "brandImg": "https://www.wati.io/wp-content/uploads/2023/04/Wati-logo.svg",
+        "welcomeText": "",
+        "messageText": "Hello, %0A I have a query about the product.",
+        "backgroundColor": "#00e785",
+        "ctaText": "Chat with us",
+        "borderRadius": "25",
+        "autoShow": false,
+        "phoneNumber": "919945883157"
+      }
+    };
+    s.onload = function () {
+      CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
   </script>
+<<<<<<< HEAD
   <script src="script.js"></script>
 
+=======
+>>>>>>> 810d2bd351e15edc2e22c98e811c4847b3e6dcbf
 </body>
 
 </html>
