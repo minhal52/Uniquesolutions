@@ -379,9 +379,9 @@ button .fa-solid{
     margin-right: 0;
     margin-bottom: 20px;
 
-    height: 100px;
-    width: 100px;
-    border-radius: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
 }
   }
 
