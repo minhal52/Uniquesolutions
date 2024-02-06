@@ -320,7 +320,7 @@ button .fa-solid{
 }
 .about-image img{
   max-width: 100%;
-  height: 100%;
+  height : 100%;
   display: block;
   
   transition: all .6s ease-in-out;
@@ -367,6 +367,27 @@ button .fa-solid{
   /* border-radius: 50px; */
 }
 
+
+@media only screen and (max-width: 767px) {
+  /* Media query for screens up to 767px (typical mobile screens) */
+
+  .about {
+    flex-direction: column-reverse; /* Change flex-direction for mobile screens */
+  }
+
+  .about-image {
+    margin-right: 0; /* Remove margin on the right for image container */
+    margin-bottom: 20px; /* Add some space between image and content */
+  }
+
+  .about-image img {
+    border-radius: 0; /* Remove border-radius for mobile screens */
+  }
+
+  .about-content {
+    margin-right: 0; /* Remove margin on the right for content container */
+  }
+}
 
 
 nav {
