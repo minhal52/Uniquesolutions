@@ -389,10 +389,14 @@ button .fa-solid{
   }
 }
 
-
-nav {
-  display: block ;
+/* Responsive Image Size for Mobile Phones */
+@media only screen and (max-width: 480px) {
+  .about-image img {
+    max-width: 80%; /* Adjust as needed */
+    height: auto; /* Keep the aspect ratio */
+  }
 }
+
 
 /* Media query for responsive design */
 /* @media screen and (max-width: 1024px) {
