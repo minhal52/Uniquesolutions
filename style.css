@@ -372,13 +372,17 @@ button .fa-solid{
   /* Media query for screens up to 767px (typical mobile screens) */
 
   .about {
-    flex-direction: column-reverse; /* Change flex-direction for mobile screens */
+    flex-direction: column-reverse; 
   }
 
   .about-image {
-    margin-right: 0; /* Remove margin on the right for image container */
-    margin-bottom: 20px; /* Add some space between image and content */
-  }
+    margin-right: 0; 
+    margin-bottom: 20px;
+    height: 100px;
+    width: 100px;
+    border-radius: 0;
+}
+  
 
   .about-image img {
     border-radius: 0; /* Remove border-radius for mobile screens */
@@ -387,16 +391,12 @@ button .fa-solid{
   .about-content {
     margin-right: 0; /* Remove margin on the right for content container */
   }
+
 }
 
-/* Responsive Image Size for Mobile Phones */
-@media only screen and (max-width: 480px) {
-  .about-image img {
-    max-width: 80%; /* Adjust as needed */
-    height: auto; /* Keep the aspect ratio */
-  }
+nav {
+  display: block ;
 }
-
 
 /* Media query for responsive design */
 /* @media screen and (max-width: 1024px) {
