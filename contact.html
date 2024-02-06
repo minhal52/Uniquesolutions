@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
   <!-- ICONS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -87,6 +89,19 @@
       flex-direction: column;
     }
 
+
+
+    /* removing from search box */
+    .search-box input,
+.search-box textarea,
+.search-box label {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  margin-bottom:0;
+}
+
+    /*  */
     label,
     input,
     textarea {
@@ -213,6 +228,9 @@
       h2 {
         font-size: 24px;
       }
+      .contact-info a{
+    font-size: 12px;
+  }
     }
 
     /* Media query for (iPads) */
@@ -228,6 +246,9 @@
       p {
         font-size: 14px;
       }
+      .contact-info a{
+    font-size: 12px;
+  }
     }
 
     /* Media query for  ( mobile screens) */
@@ -243,9 +264,29 @@
       p {
         font-size: 12px;
       }
-
+      .contact-info a{
+    font-size: 10px;
+  }
       ;
     }
+    /* Media query for mobile screens */
+@media only screen and (max-width: 600px) {
+  .contact-box div {
+    flex: 1 0 calc(50% - 20px);
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+  .contact-info a{
+    font-size: 10px;
+  }
+}
+
   </style>
 </head>
 
@@ -266,20 +307,20 @@
     <div class="logoDiv">
       <a href="https://uniquepackagingsolutionsindia.com"><img src="IMAGES/logo-nobg.png" alt="Logo" class="logo"></a>
     </div>
-    <!-- <div class="search-box">
+    <div class="search-box">
           <div class="row">
             <input type="text" id="input-box" placeholder="Search anything..." autocomplete="off">
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
     
-          </div> -->
+          </div>
 
     <div class="result-box"></div>
     </div>
     <div style="float: left;" class="mobile-menu" onclick="toggleMobileMenu()">☰</div>
     <div class="icons1">
-      <!-- <button><i class="fa-brands fa-facebook"></i></button>
+      <button><i class="fa-brands fa-facebook"></i></button>
           <button><i class="fa-brands fa-instagram"></i></button>
-          <button><i class="fa-brands fa-youtube"></i></button> -->
+          <button><i class="fa-brands fa-youtube"></i></button>
     </div>
   </header>
 

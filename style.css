@@ -372,27 +372,27 @@ button .fa-solid{
   /* Media query for screens up to 767px (typical mobile screens) */
 
   .about {
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse; /* Change flex-direction for mobile screens */
   }
 
   .about-image {
-    margin-right: 0; 
+    margin-right: 0;
     margin-bottom: 20px;
+
     height: 100px;
     width: 100px;
     border-radius: 0;
 }
-  
+  }
 
   .about-image img {
-    border-radius: 0; /* Remove border-radius for mobile screens */
+    border-radius: 0;
   }
 
   .about-content {
-    margin-right: 0; /* Remove margin on the right for content container */
-  }
-
+    margin-right: 0; 
 }
+
 
 nav {
   display: block ;
@@ -429,7 +429,7 @@ nav {
   }
 } */
 
-/* new updateted Media design for header by tayya */
+/* new updateted Media design for header*/
 @media screen and (max-width: 1024px) {
   body {
     background-attachment: fixed;
