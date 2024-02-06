@@ -389,6 +389,7 @@ nav {
   }
 } */
 
+/* new updateted Media design for header by tayya */
 @media screen and (max-width: 1024px) {
   body {
     background-attachment: fixed;
@@ -407,7 +408,7 @@ nav {
   }
 
   .search-box {
-    width: 80%;
+    width: 50%;
     margin: 10px auto;
   }
 
@@ -422,31 +423,57 @@ nav {
 
   .mobile-menu {
     display: block;
-    margin-top: 10px;
+    margin-top: -2px;
+    width: 10%;
   }
 
   .search-bar {
     max-width: 100%;
   }
 
-  .social-media {
+  .icons1 {
     display: flex;
     justify-content: flex-end;
-    margin-top: 10px;
+    align-items: center;
+    margin-top: -2px;
+    width: 20%;
+    max-width: 20%;
+    padding-right: 10px; 
+    padding-left: 5px;
+    box-sizing: border-box;
   }
 
-  .social-media a {
-    margin: 0 10px;
+  .icons1 button {
+    padding: 5px;
+    margin: 0 2px;
+    width: 30px;
   }
 
-  .logo{
-    width: 60px;
+  .icons1 button:first-child {
+    margin-left: 0;
+  }
+
+  .icons1 button:last-child {
+    margin-right: 0;
+  }
+
+  .icons1 button:last-child i {
+    margin-right: 10px; 
+  }
+
+  .icons1 button i {
+    font-size: 20px;
+  }
+
+  .logoDiv {
+    width: 20%;
+  }
+
+  .logo {
+    width: 100%;
     height: auto;
   }
 }
-
-
-
 
 
 /* Pagination links */
