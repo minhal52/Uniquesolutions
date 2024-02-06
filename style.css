@@ -238,6 +238,19 @@ button .fa-solid{
   color: black;
 }
 
+.icons1 {
+  display: flex;
+  gap: 30px; /* Adjust the gap between icons as needed */
+  margin: 0 auto;
+}
+
+.icons1 button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
   
 /* Mobile menu styles */
 .mobile-menu {
@@ -355,44 +368,6 @@ button .fa-solid{
 }
 
 
-/* Responsive Styles for Mobile Screens */
-@media screen and (max-width: 768px) {
-  .heading {
-     padding: 0px 20px;
-  }
-
-  .heading h1 {
-     font-size: 36px;
-  }
-
-  .heading p {
-     font-size: 17px;
-     margin-bottom: 0px;
-  }
-
-  .container {
-     padding: 0px;
-  }
-
-  .about {
-     padding: 20px;
-     flex-direction: column;
-  }
-
-  .about-image {
-     margin-right: 0px;
-     margin-bottom: 20px;
-  }
-
-  .about-content p {
-     padding: 0px;
-     font-size: 16px;
-  }
-
-  .about-content .read-more {
-     font-size: 16px;
-  }
-}
 
 nav {
   display: block ;
@@ -662,6 +637,8 @@ nav {
   }
 
   .about-image {
+    height: fit-content;
+    width:fit-content;
      margin-right: 0;
      margin-bottom: 20px;
   }
