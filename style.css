@@ -354,6 +354,46 @@ button .fa-solid{
   /* border-radius: 50px; */
 }
 
+
+/* Responsive Styles for Mobile Screens */
+@media screen and (max-width: 768px) {
+  .heading {
+     padding: 0px 20px;
+  }
+
+  .heading h1 {
+     font-size: 36px;
+  }
+
+  .heading p {
+     font-size: 17px;
+     margin-bottom: 0px;
+  }
+
+  .container {
+     padding: 0px;
+  }
+
+  .about {
+     padding: 20px;
+     flex-direction: column;
+  }
+
+  .about-image {
+     margin-right: 0px;
+     margin-bottom: 20px;
+  }
+
+  .about-content p {
+     padding: 0px;
+     font-size: 16px;
+  }
+
+  .about-content .read-more {
+     font-size: 16px;
+  }
+}
+
 nav {
   display: block ;
 }
