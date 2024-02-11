@@ -366,6 +366,25 @@ button .fa-solid{
   /* border-radius: 50px; */
 }
 
+nav {
+  display: block;
+}
+
+
+
+/* Responsive Styles for Laptops and Medium Screens */
+@media screen and (max-width: 1024px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .about-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* Responsive Styles for Mobile Screens */
 @media screen and (max-width: 768px) {
   .heading {
     padding: 0px 20px;
@@ -403,9 +422,7 @@ button .fa-solid{
     font-size: 16px;
   }
 }
-nav {
-  display: block ;
-}
+
 
 /* Media query for responsive design */
 /* @media screen and (max-width: 1024px) {
@@ -524,107 +541,97 @@ nav {
 /* ==================================================== */
  /* ===================product page========================== */
   /* ================================================== */
- #product-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  /* margin-top: 60px;  */
-}
-
-.product-container {
-  box-shadow: 0 8px 16px rgba(0, 0, 255, 0.2); 
-  border-radius: 8px;
-  overflow: hidden;
-  margin: 20px;
-  width: calc(33.333% - 40px);
-  max-width: 300px;
-  transition: all .6s ease-in-out;
+  #product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* margin-top: 60px; */
+  }
   
-}
-
-.product-container:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 255, 0.2); 
-}
-
-
-.product-image {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-}
-
-.product-details {
-  padding: 15px;
-  margin-bottom: 20px;
-  line-height: 1.5;
+  .product-container {
+    box-shadow: 0 8px 16px rgba(0, 0, 255, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    width: calc(33.333% - 40px);
+    max-width: 300px;
+    transition: all .6s ease-in-out;
+  }
   
-}
-.product-details h3{
-  font-size: 22px;
-}
-
+  .product-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 255, 0.2);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .product-details {
+    padding: 15px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .product-details h3 {
+    font-size: 22px;
+  }
+  
+  /* Responsive Media Query for Mobile Screens */
+  @media (max-width: 768px) {
+    .product-container {
+      width: calc(50% - 40px);
+      max-width: none;
+    }
+  
+    .product-details h3 {
+      font-size: 14px; /* Decrease font size for mobile screens */
+    }
+  }
 /* ===========buy-button/View details Button======= */
 .buy-button,
 #View-details {
     display: block;
     width: 100%;
-    height: auto;
     padding: 8px;
-    margin: 6px;
-    gap: 2px;
+    margin: 6px 0; /* Removed unnecessary gap */
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    transition: all 0.6s ease-in-out;
-    
+    transition: background-color 0.6s ease-in-out, color 0.6s ease-in-out;
 }
 
 .buy-button {
-  border: 1px solid black;
-  background-color: lightskyblue;
-  color: black;
-  transition: none;
+    border: 1px solid black;
+    background-color: lightskyblue;
+    color: black;
 }
 
 .buy-button a {
     display: block;
     width: 100%;
     height: 100%;
-    color:black;
+    color: black;
     text-decoration: none;
     font-size: 20px;
 }
 
 .buy-button:hover {
-    background-color:black;
-    color:white;
-    transition: none;
+    background-color: black;
+    color: white;
 }
 
-
-#View-details:hover{
-  background-color:black;
-  color: white;
-  transition: none;
-}
-
-.buy-button a:hover {
-
-  color: white;
-  transition: none;
-}
-#View-details a:hover{
-
-  color:white;
-  transition: none;
+#View-details:hover {
+    background-color: black;
+    color: white;
 }
 
 #View-details {
     border: 1px solid black;
     box-sizing: border-box;
     background-color: lightskyblue;
-
 }
 
 #View-details a {
@@ -636,6 +643,12 @@ nav {
     font-size: 20px;
 }
 
+@media (max-width: 768px) {
+    .buy-button,
+    #View-details {
+        margin: 6px;
+    }
+}
 
 @media (max-width: 1024px) {
   .product-container {
