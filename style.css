@@ -977,19 +977,19 @@ nav {
 /* The company logo */
 
 .footer-distributed h3 {
-  color:grey;
+  color:white;
   font: normal 36px 'Open Sans';
   margin: 0;
 }
 
 .footer-distributed h3 span {
-  color:grey;
+  color:white;
 }
 
 /* Footer links */
 
 .footer-distributed .footer-links {
-  color:grey;
+  color:white;
   margin: 20px 0 12px;
   padding: 0;
 }
@@ -1003,7 +1003,7 @@ nav {
 }
 
 .footer-distributed .footer-company-name {
-  color: grey;
+  color: white;
   font-size: 14px;
   font-weight: normal;
   margin: 0;
@@ -1017,7 +1017,7 @@ nav {
 
 .footer-distributed .footer-center i {
   
-  color: grey;
+  color: white;
   font-size: 25px;
   width: 38px;
   height: 38px;
@@ -1035,7 +1035,7 @@ nav {
 
 .footer-distributed .footer-center p {
   display: inline-block;
-  color:grey;
+  color:white;
   font-weight: 400;
   vertical-align: middle;
   margin: 0;
@@ -1049,7 +1049,7 @@ nav {
 }
 
 .footer-distributed .footer-center p a {
-  color: grey;
+  color:white;
   text-decoration: none;
 }
 
@@ -1058,7 +1058,7 @@ nav {
   font-weight: 300;
   font-size: 20px;
   left: 0;
-  color:grey;
+  color:white;
   display: inline-block;
   padding-right: 5px;
 }
@@ -1083,7 +1083,7 @@ nav {
 
 .footer-distributed .footer-company-about span {
   display: block;
-  color:grey;
+  color:white;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 20px;
