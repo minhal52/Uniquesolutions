@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .category-section {
+      display: grid;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .category-item {
+      text-align: center;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    .category-item img {
+      max-width: 100px;
+      max-height: 100px;
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 769px) {
+      .category-section {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .category-section {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="category-section">
+    <div class="category-item" onclick="location.href='category1.html';" style="cursor: pointer;">
+      <img src="icon1.png" alt="Category 1">
+      <h3>Category 1</h3>
+    </div>
+
+    <div class="category-item" onclick="location.href='category2.html';" style="cursor: pointer;">
+      <img src="icon2.png" alt="Category 2">
+      <h3>Category 2</h3>
+    </div>
+
+    <div class="category-item" onclick="location.href='category3.html';" style="cursor: pointer;">
+      <img src="icon3.png" alt="Category 3">
+      <h3>Category 3</h3>
+    </div>
+
+    <div class="category-item" onclick="location.href='category4.html';" style="cursor: pointer;">
+      <img src="icon4.png" alt="Category 4">
+      <h3>Category 4</h3>
+    </div>
+
+    <div class="category-item" onclick="location.href='category5.html';" style="cursor: pointer;">
+      <img src="icon5.png" alt="Category 5">
+      <h3>Category 5</h3>
+    </div>
+
+    <div class="category-item" onclick="location.href='category6.html';" style="cursor: pointer;">
+      <img src="icon6.png" alt="Category 6">
+      <h3>Category 6</h3>
+    </div>
+  </div>
+
+</body>
+</html>
