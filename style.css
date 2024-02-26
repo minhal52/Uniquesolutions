@@ -617,6 +617,14 @@ nav {
     text-decoration: none;
     font-size: 20px;
 }
+.buy-button a:hover {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color:white;
+  text-decoration: none;
+  font-size: 20px;
+}
 
 .buy-button:hover {
     background-color: black;
@@ -641,6 +649,14 @@ nav {
     text-decoration: none;
     color: black;
     font-size: 20px;
+}
+#View-details a:hover {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color:white;
+  font-size: 20px;
 }
 
 @media (max-width: 768px) {
