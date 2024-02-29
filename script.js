@@ -77,15 +77,15 @@ Skewers: {
 },
 "Paper Bags": {
   keywords: ["Paper Bags", "Carry Bags","Tamper Evident Bags","Bakery Paper Bags","Restaurant Paper Bags","Sweet Paper Bags"],
-  fileName: "product-4.html",
+  fileName: "paperpro3.html",
 },
 "Cutlery's":{
 keywords: ["Spoons", "Knives", "Forks","Toothpicks", "Cutlery"],
-fileName: "product-3.html",
+fileName: "paperpro6.html",
 },
 "Disposables":{
   keywords: ["Car Premier Tissue", "Masks", "Bouffmant Cap","Toilet Paper Rolls", "Kitchen Paper Rolls","Bubble Wrap"],
-  fileName: "product-5.html",
+  fileName: "paperpro4.html",
   }, 
 };
 
