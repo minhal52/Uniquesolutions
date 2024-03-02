@@ -26,6 +26,7 @@
 </head>
 
 <body>
+<div id="loader"></div>
 
   <header>
     <div class="logoDiv">
@@ -54,15 +55,7 @@
     <a href="about.html">About</a>
     <div class="dropdown">
       <a href="category.html">All Products</a>
-      <!-- <i class="fa fa-caret-down"></i> -->
-      <!-- <div class="dropdown-content">
-        <a href="product.html">Aluminium Containers</a>
-        <a href="product-3.html">Sugarcane Bagasse Products</a>
-        <a href="product-4.html">Disposable products</a>
-        <a href="product-2.html">Takeaways</a>
-        <a href="product-3.html">Skewers</a>
-        <a href="product-4.html">Icecream Cups</a>
-         <a href="product-4.html">Paperbags</a>-->
+    
     </div>
     </div>
     <div class="dropdown" class="border">
@@ -476,6 +469,15 @@
     };
     var x = document.getElementsByTagName('script')[0];
     x.parentNode.insertBefore(s, x);
+  </script>
+  <script>
+    var preloader = document.getElementById('loader');
+    window.addEventListener("load", function(){
+      loader.style.display = 'none';
+    })
+   
+      
+    
   </script>
 </body>
 
