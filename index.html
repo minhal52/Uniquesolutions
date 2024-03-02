@@ -470,15 +470,15 @@
     var x = document.getElementsByTagName('script')[0];
     x.parentNode.insertBefore(s, x);
   </script>
-  <script>
-    var preloader = document.getElementById('loader');
-    window.addEventListener("load", function(){
+ <script>
+  var preloader = document.getElementById('loader');
+  window.addEventListener("load", function(){
+    setTimeout(function() {
       loader.style.display = 'none';
-    })
-   
-      
-    
-  </script>
+    }, 2000); // 2000 milliseconds (2 seconds) delay
+  });
+</script>
+
 </body>
 
 </html>
