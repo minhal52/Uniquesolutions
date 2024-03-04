@@ -435,37 +435,6 @@ nav {
 }
 
 
-/* Media query for responsive design */
-/* @media screen and (max-width: 1024px) {
-  body{
-    background-attachment: fixed;
-  }
-  nav {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    z-index: 999;
-    width: 100%;
-  }
-  .nav-show{
-    display: block !important;
-  }
-  .search-box{
-    width: 70%;
-  }
-  nav a {
-    display: block;
-  }
-
-  .mobile-menu {
-    display: block;
-  }
-
-  .search-bar {
-    max-width: 100%;
-  }
-} */
-
 /* new updateted Media design for header*/
 @media screen and (max-width: 1024px) {
   body {
@@ -589,6 +558,24 @@ nav {
     font-size: 22px;
   }
   
+
+  /* product buttons  */
+  .product-buttons {
+    /* display: flex; */
+    justify-content: space-between; /* Align buttons horizontally */
+    padding: 10px; /* Adjust padding to your preference */
+    margin-top: auto; /* Pushes the buttons to the bottom */
+  }
+  
+  .product-buttons button {
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    transition: background-color 0.6s ease-in-out, color 0.6s ease-in-out;
+  }
   /* Responsive Media Query for Mobile Screens */
   @media (max-width: 768px) {
     .product-container {
