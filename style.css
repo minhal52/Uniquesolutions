@@ -491,6 +491,73 @@ nav {
   }
 }
 
+/* Media query for screens with a maximum width between medium and laptop sizes */
+@media screen and (max-width: 1366px) {
+  body {
+    background-attachment: fixed;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+  }
+
+  .nav-show {
+    display: flex !important;
+  }
+
+  .search-box {
+    width: 60%;
+    margin: 10px auto;
+  }
+
+  .search-box input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  nav a {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: block;
+    margin-top: -2px;
+    width: 20%;
+  }
+
+  .search-bar {
+    max-width: 100%;
+  }
+  .logoDiv {
+    width: 40%;
+  }
+
+  .logo {
+    width: 60%;
+    height: auto;
+  }
+  
+  /* Hide social media icons */
+  .icons1 {
+    display: none;
+  }
+  .text-content p {
+    font-size: 18px; /* Decrease font size for paragraphs on smaller screens */
+  }
+
+  .text-content h4 {
+    font-size: 20px; /* Decrease font size for h4 headings on smaller screens */
+  }
+
+  .text-content h1.home-text {
+    font-size: 30px; /* Decrease font size for h1 headings on smaller screens */
+  }
+}
+
 
 
 /* Pagination links */
@@ -996,15 +1063,6 @@ nav {
   margin-left: 50px;
 }
 
-/* Media query for screens smaller than 768px (typical mobile screens) */
-@media only screen and (max-width: 768px) {
-  .footerlogo {
-    width: 70px; /* Adjust the width for smaller screens */
-    height: 70px; /* Adjust the height for smaller screens */
-    margin: 0 auto; /* Center the logo horizontally */
-    display: block;
-  }
-}
 
 /* The company logo */
 
@@ -1144,6 +1202,17 @@ nav {
 
 
 
+/* Media query for screens smaller than 768px (typical mobile screens) */
+@media only screen and (max-width: 768px) {
+  .footerlogo {
+    width: 70px; /* Adjust the width for smaller screens */
+    height: 70px; /* Adjust the height for smaller screens */
+    margin: 0 auto; /* Center the logo horizontally */
+    display: block;
+  }
+}
+
+
 @media (max-width: 880px) {
 
   .footer-distributed {
@@ -1255,28 +1324,54 @@ nav {
   max-width: 120%; /* Adjust the max-width to make it wider */
 }
 
-.text-content h1 {
-  color: #333333;
-  line-height: 1.3;
-  font-size: 39px;
+.text-content h1.home-text {
+  color: black; /* Override inline color style */
+  width: auto; /* Override inline width style */
+  font-weight: bolder; /* Override inline font-weight style */
+  font-size: 39px; /* Override default font-size */
+  line-height: 1.3; /* Override default line-height */
 }
 
-.shopnow-btn{
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media only screen and (max-width: 768px) {
+  .text-content p {
+    font-size: 16px; /* Decrease font size for paragraphs on smaller screens */
+  }
+
+  .text-content h4 {
+    font-size: 20px; /* Decrease font size for h4 headings on smaller screens */
+  }
+
+  .text-content h1.home-text {
+    font-size: 30px; /* Decrease font size for h1 headings on smaller screens */
+  }
+}
+
+.shopnow-btn {
   background-color: lightblue;
   padding: 20px;
   border-radius: 20px;
   margin-bottom: 20px;
-align-items: center;
-display: inline-block;
-font-weight: bold;
-font-size: 25px;
-width: 40%;
-
+  align-items: center;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 25px;
+  width: 40%;
 }
-.shopnow-btn:hover{
-  background-color:#A3672B;
+
+.shopnow-btn:hover {
+  background-color: #a3672b;
   color: white;
-  transition: transform 0.3s ease-in-out;  
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media only screen and (max-width: 768px) {
+  .shopnow-btn {
+    font-size: 20px; /* Adjust the font size for smaller screens */
+    width: 80%; /* Adjust width for smaller screens if needed */
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
 }
 
 .slide-container .slide {
@@ -1385,7 +1480,9 @@ width: 40%;
     order: 1;
     margin-right: 50px;
   }
-}
+
+} 
+
 
   
 /* ==============product carousel=================== */

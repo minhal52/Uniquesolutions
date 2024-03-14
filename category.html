@@ -1,97 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Products</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Products</title>
   <link rel="icon" type="image/jpg" href="IMAGES/logo-removebg big.png">
   <link rel="stylesheet" href="style.css">
 </head>
+<style>
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Footer styles */
+footer {
+    background: black;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center; /* Center the copyright text */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.address,
+.contact {
+    flex-basis: 30%;
+    text-align: center; /* Center align the content */
+}
+
+.contact p,
+.address p {
+    margin: 0; /* Remove default margins */
+}
+
+.contact-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+    flex-basis: 30%; /* Adjust based on your preference */
+}
+
+.logo img {
+    max-width: 60%;
+    height: auto;
+}
+.logo a{
+  text-align: center;
+  color: #fff;
+}
+
+.footer-links {
+    flex-basis: 100%; /* Full width */
+    margin-top: 20px; /* Adjust spacing between logo and links */
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px; /* Adjust spacing between links */
+}
+
+.footer-links a:hover {
+    text-decoration: none;
+}
+
+.footer-company-name {
+    margin-top: 20px; /* Adjust spacing as needed */
+    flex-basis: 100%; /* Full width */
+}
+
+
+
+</style>
+
 <body>
-    <header>
-        <div class="logoDiv">
-          <a href="https://uniquepackagingsolutionsindia.com"><img src="IMAGES/logo-nobg.png" alt="Logo" class="logo"></a>
-        </div>
-        <div class="search-box">
-          <div class="row">
-            <input type="text" id="input-box" placeholder="Search anything..." autocomplete="off">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-    
-          </div>
-    
-          <div class="result-box"></div>
-        </div>
-        <div class="mobile-menu" onclick="toggleMobileMenu()">☰</div>
-        <div class="icons1">
-          <button><i class="fa-brands fa-facebook"></i></button>
-          <button><i class="fa-brands fa-instagram"></i></button>
-          <button><i class="fa-brands fa-whatsapp"></i></button>
-          <button><i class="fa-solid fa-envelope"></i></i></button>
-        </div>
-      </header>
-    
-      <nav class="border">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <div class="dropdown">
-          <a href="category.html">All Products</a>
-        
-        </div>
-        </div>
-        <div class="dropdown" class="border">
-          <button class="dropbtn">All Raw Materials
-            <!-- <i class="fa fa-caret-down"></i> -->
-          </button>
-          <div class="dropdown-content">
-            <a href="plasticpro2.html">Plastic Cups</a>
-            <a href="sugarcanepro1.html">Sugarcane Bagasse Products</a>
-            <a href="paperpro4.html">Disposable products</a>
-            <a href="aluminium.html">Aluminium Containers</a>
-            <a href="plasticpro.html">Takeaways</a>
-            <a href="paperpro6.html">Skewers</a>
-            <a href="paperpro6.html">Icecream Sticks</a>
-            <a href="paperpro3.html">Paperbags</a>
-            <a href="glasspro1.html">Glass Jars</a>
-    
-          </div>
-        </div>
-        <a href="contact.html">Contact us</a>
-      </nav>
+  <header>
+    <div class="logoDiv">
+      <a href="https://uniquepackagingsolutionsindia.com"><img src="IMAGES/logo-nobg.png" alt="Logo" class="logo"></a>
+    </div>
+    <div class="search-box">
+      <div class="row">
+        <input type="text" id="input-box" placeholder="Search anything..." autocomplete="off">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
 
-      <!-- all products  -->
-   <!-- All products section  -->
-   <!-- <h1 style="text-align: center;justify-content: center; padding-top: 5px;">All Products</h1> -->
-   <div class="category-section">
-     <div class="category-item" onclick="location.href='plasticcategory.html';" style="cursor: pointer;">
-       <img src="IMAGES/plasticicon.jpg" alt="Category 1">
-       <h3>Plastic products</h3>
-     </div>
- 
-     <div class="category-item" onclick="location.href='papercategory.html';" style="cursor: pointer;">
-       <img src="IMAGES/paper icon.jpg" alt="Category 2">
-       <h3>Paper Products</h3>
-     </div>
- 
-     <div class="category-item" onclick="location.href='glasscategory.html';" style="cursor: pointer;">
-       <img src="IMAGES/glass icon.jpg" alt="Category 3">
-       <h3>Glass Products</h3>
-     </div>
- 
-     <div class="category-item" onclick="location.href='sugarprocategory.html';" style="cursor: pointer;">
-       <img src="IMAGES/Sugarcaneicon.jpg" alt="Category 4">
-       <h3>Sugarcane Bagasse Products</h3>
-     </div>
- 
-     <div class="category-item" onclick="location.href='Arecacategory.html';" style="cursor: pointer;">
-       <img src="IMAGES/Arecanut icon.jpg" alt="Category 5">
-       <h3>Areca Products</h3>
-     </div>
- 
-     <div class="category-item" onclick="location.href='aluminium.html';" style="cursor: pointer;">
-       <img src="IMAGES/plasticicon.jpg" alt="Category 6">
-       <h3>Aluminium Products</h3>
-     </div>
-   </div>
+      </div>
 
+      <div class="result-box"></div>
+    </div>
+    <div class="mobile-menu" onclick="toggleMobileMenu()">☰</div>
+    <div class="icons1">
+      <button><i class="fa-brands fa-facebook"></i></button>
+      <button><i class="fa-brands fa-instagram"></i></button>
+      <button><i class="fa-brands fa-whatsapp"></i></button>
+      <button><i class="fa-solid fa-envelope"></i></i></button>
+    </div>
+  </header>
+
+  <nav class="border">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <div class="dropdown">
+      <a href="category.html">All Products</a>
+
+    </div>
+    </div>
+    <div class="dropdown" class="border">
+      <button class="dropbtn">All Raw Materials
+        <!-- <i class="fa fa-caret-down"></i> -->
+      </button>
+      <div class="dropdown-content">
+        <a href="plasticpro2.html">Plastic Cups</a>
+        <a href="sugarcanepro1.html">Sugarcane Bagasse Products</a>
+        <a href="paperpro4.html">Disposable products</a>
+        <a href="aluminium.html">Aluminium Containers</a>
+        <a href="plasticpro.html">Takeaways</a>
+        <a href="paperpro6.html">Skewers</a>
+        <a href="paperpro6.html">Icecream Sticks</a>
+        <a href="paperpro3.html">Paperbags</a>
+        <a href="glasspro1.html">Glass Jars</a>
+
+      </div>
+    </div>
+    <a href="contact.html">Contact us</a>
+  </nav>
+
+  <!-- all products  -->
+  <!-- All products section  -->
+  <!-- <h1 style="text-align: center;justify-content: center; padding-top: 5px;">All Products</h1> -->
+  <div class="category-section">
+    <div class="category-item" onclick="location.href='plasticcategory.html';" style="cursor: pointer;">
+      <img src="IMAGES/plasticicon.jpg" alt="Category 1">
+      <h3>Plastic products</h3>
+    </div>
+
+    <div class="category-item" onclick="location.href='papercategory.html';" style="cursor: pointer;">
+      <img src="IMAGES/paper icon.jpg" alt="Category 2">
+      <h3>Paper Products</h3>
+    </div>
+
+    <div class="category-item" onclick="location.href='glasscategory.html';" style="cursor: pointer;">
+      <img src="IMAGES/glass icon.jpg" alt="Category 3">
+      <h3>Glass Products</h3>
+    </div>
+
+    <div class="category-item" onclick="location.href='sugarprocategory.html';" style="cursor: pointer;">
+      <img src="IMAGES/Sugarcaneicon.jpg" alt="Category 4">
+      <h3>Sugarcane Bagasse Products</h3>
+    </div>
+
+    <div class="category-item" onclick="location.href='Arecacategory.html';" style="cursor: pointer;">
+      <img src="IMAGES/Arecanut icon.jpg" alt="Category 5">
+      <h3>Areca Products</h3>
+    </div>
+
+    <div class="category-item" onclick="location.href='aluminium.html';" style="cursor: pointer;">
+      <img src="IMAGES/plasticicon.jpg" alt="Category 6">
+      <h3>Aluminium Products</h3>
+    </div>
+  </div>
+
+    <!-- <footer>
+        <div class="footer-content">
+            <div class="address">
+              <br><br><br><br><br><br><br><br><br><br>   <br><br><br><br><br>  <p>
+                    <i class="fas fa-location-dot"></i>
+                    No.135/8, 1st Main Road, 4th D Cross, Gandhi Nagar,<br>
+                    Bangalore - 560 009.
+                </p>
+            </div>
+            <div class="logo">
+                <img src="IMAGES/logo-removebg big.png" alt="Logo">
+                <div>
+                  <i class="fa fa-envelope"></i>
+                  <p><a href="mailto:Uniquepackagingindialtd@gmail.com" class="link">
+                      Uniquepackagingindialtd@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="contact"> 
+              <br><br><br><br><br><br><br><br><br><br>  <br><br><br><br><br>  <p>
+                <p>Call Us:</p> <br>  <i class="fa fa-phone"></i> 
+                    <a href="tel:919945883157" class="contact-link">+91 9945883157</a><br>
+                    <a href="tel:918073519061" class="contact-link">+91 8073519061</a><br>
+                    <a href="tel:919986689910" class="contact-link">+91 9986689910</a><br>
+                    <a href="tel:918660505698" class="contact-link">+91 8660505698</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-links">
+            <p class="footer-links" style="text-align: center;">
+                <a href="index.html" class="link-1">Home | </a>
+                <a href="category.html">Our Products |</a>
+                <a href="about.html"> About |</a>
+                <a href="contact.html">Contact</a>
+            </p>
+        </div>
+        <p class="footer-company-name">Uniquepackagingindialtd © 2020</p>
+    </footer> -->
+  <!-- script -->
+  <script src="script.js"></script>
+ <!-- font awesome script -->
+ <script src="https://kit.fontawesome.com/393ff6bdca.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
