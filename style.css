@@ -1767,7 +1767,7 @@ padding:15px;
 
 .feature-box {
   width: 48%; 
-  /* margin-bottom: 20px; */
+  margin-bottom: 20px;
   box-sizing: border-box; 
   word-wrap: break-word; 
 }
